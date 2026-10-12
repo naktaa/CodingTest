@@ -5,6 +5,10 @@ n <= 14
 그리디?
 정렬해서 하면 반례 생김  [7 4 3 8 10], 12
 안되면 다음거 찾기
+======================================================================
+그리디로 하면 시간초과
+비트마스킹 dp로 바꿔서 풀기
+dp(used, {session, empty})
 */
 
 #include <vector>
@@ -12,32 +16,40 @@ n <= 14
 using namespace std;
 
 class Solution {
-public:
-    int minSessions(vector<int>& tasks, int sessionTime) {
-        sort(tasks.begin(), tasks.end());
-        int cnt = 0;
+    struct task {
+        int cnt, emptyTime;
+    };
+    vector<task> dp;
 
-        while (!tasks.empty()) {
-            int Time = sessionTime;
+    void func(vector<int>& tasks, int sessionTime, int visited) {
+        for (int i = 0; i < tasks.size(); i++) {
+            if (visited & (1 << i)) continue;
 
-            while (!tasks.empty()) {
-                bool found = false;
-
-                for (int i = tasks.size() - 1; i >= 0; i--) {
-                    if (tasks[i] <= Time) {
-                        Time -= tasks[i];
-                        tasks.erase(tasks.begin() + i);
-                        found = true;
-                        break;
-                    }
-                }
-
-                if (!found) break;
+            task now = dp[visited];
+            int newSession = 0, ncnt = now.cnt, nemptyTime;
+            if (now.emptyTime < tasks[i]) newSession = 1;
+            if (newSession) {
+                ncnt++;
+                nemptyTime = sessionTime - tasks[i];
+            }
+            else {
+                nemptyTime = now.emptyTime - tasks[i];
             }
 
-            cnt++;
-        }
+            int nvisited = visited | (1 << i);
+            if (ncnt > dp[nvisited].cnt) continue;
+            if (ncnt == dp[nvisited].cnt && nemptyTime <= dp[nvisited].emptyTime) continue;
 
-        return cnt;
+            dp[nvisited] = {ncnt, nemptyTime};
+            func(tasks, sessionTime, nvisited);
+        }
+    }
+
+public:
+    int minSessions(vector<int>& tasks, int sessionTime) {
+        dp.assign(1 << tasks.size(), {15, sessionTime});
+        dp[0] = {1, sessionTime};
+        func(tasks, sessionTime, 0);
+        return dp[(1 << tasks.size()) - 1].cnt;
     }
 };
