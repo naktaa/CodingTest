@@ -26,30 +26,38 @@ class Solution {
 
     vector<job> jobs;
     vector<int> dp;
+    vector<int> ends;
 
 public:
     int jobScheduling(vector<int>& startTime, vector<int>& endTime, vector<int>& profit) {
         int size = startTime.size();
         jobs.resize(size);
-        dp.resize(size, 0);
+        dp.resize(size + 1, 0);
+        ends.resize(size);
+
         for (int i = 0; i < size; i++) {
             jobs[i] = {startTime[i], endTime[i], profit[i]};
+            ends[i] = endTime[i];
         }
         sort(jobs.begin(), jobs.end(), cmp);
+        sort(ends.begin(), ends.end());
 
-        int last = jobs[0].end;
-        dp[0] = jobs[0].profit;
-
-        for (int i = 1; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             int nprofit;
-            if (jobs[i].start >= last) {
-                nprofit = dp[i - 1] + jobs[i].profit;
-            }
-            else {
+
+            auto it = upper_bound(ends.begin(), ends.begin() + i, jobs[i].start);
+
+            if (it == ends.end()) {
                 nprofit = jobs[i].profit;
             }
+            else {
+                int idx = it - ends.begin();
+                nprofit = dp[idx] + jobs[i].profit;
+            }
+
+            dp[i + 1] = max(dp[i], nprofit);
         }
 
-        return dp[size - 1];
+        return dp[size];
     }
 };
