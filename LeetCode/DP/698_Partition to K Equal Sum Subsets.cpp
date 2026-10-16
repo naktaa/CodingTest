@@ -16,34 +16,32 @@ dfs로 비트마스킹 하면서 sum 관리하면됨
 using namespace std;
 
 class Solution {
-    bool flag = false;
     float avg;
-    vector<int> visited;
+    vector<int> result;
 
-    void func(vector<int>& nums, int k, int cnt, int mask, int sum) {
-        if (flag) return;
-        if (cnt == k) {
-            flag = true;
-            return;
-        }
+    bool func(vector<int>& nums, int k, int cnt, int mask, int sum) {
+        if (cnt == k) return true;
 
         for (int i = 0; i < nums.size(); i++) {
             if (mask & (1 << i)) continue;
 
             int nsum = sum + nums[i];
             int nmask = mask | (1 << i);
+            if (result[nmask]) continue;
 
-            if (visited[nmask]) continue;
-            if (nsum > avg)
+            if (nsum > avg) {
                 continue;
+            }
             else if (nsum == avg) {
-                visited[nmask] = 1;
-                func(nums, k, cnt + 1, nmask, 0);
+                if (func(nums, k, cnt + 1, nmask, 0)) return true;
             }
             else {
-                func(nums, k, cnt, nmask, nsum);
+                if (func(nums, k, cnt, nmask, nsum)) return true;
             }
         }
+
+        result[mask] = 1;
+        return false;
     }
 
 public:
@@ -52,9 +50,8 @@ public:
         if (total % k != 0) return false;
 
         avg = total / k;
-        visited.assign(1 << nums.size(), 0);
-        func(nums, k, 0, 0, 0);
+        result.assign(1 << nums.size(), 0);
 
-        return flag;
+        return func(nums, k, 0, 0, 0);
     }
 };
