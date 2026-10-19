@@ -32,7 +32,9 @@ public:
                 visited.insert(s[right]);
                 right++;
             }
-            /* 개선
+        }
+        /* 개선
+        for (int right = 0; right < len; right++) {
             while (visited.find(s[right]) != visited.end()) {
                 visited.erase(s[left]);
                 left++;
@@ -40,8 +42,8 @@ public:
 
             visited.insert(s[right]);
             MAX = max(MAX, right - left + 1);
-            */
         }
+        */
         MAX = max(MAX, right - left);
 
         return MAX;
