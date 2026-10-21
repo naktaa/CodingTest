@@ -1,0 +1,276 @@
+{
+  "compiler": "g++ -std=c++17 -O2 -Wall -Wextra -pedantic",
+  "elapsedSeconds": 1.4,
+  "results": [
+    {
+      "id": "complexity",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "implementation",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "sorting",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "frequency",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "stack-queue",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "heap",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "prefix",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "difference",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "two-pointers",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "sliding-window",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "binary-search",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "compression",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "greedy",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "intervals",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "bruteforce",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "backtracking",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "permutations",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "math",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "bits",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "dfs",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "bfs",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "multi-bfs",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "state-bfs",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "heap-simulation",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "monotonic-stack",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "monotonic-deque",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "parametric",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "dijkstra",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "floyd",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "topological",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "dsu",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "mst",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "dp",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "knapsack",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "lis",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "interval-dp",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "tree",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "tree-dp",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "zero-one-bfs",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "bellman-ford",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "bitmask-dp",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "fenwick",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "segment-tree",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "euler-tour",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    },
+    {
+      "id": "lca",
+      "passed": true,
+      "phase": "run",
+      "details": ""
+    }
+  ]
+}

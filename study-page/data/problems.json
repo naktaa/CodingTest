@@ -1,0 +1,2877 @@
+{
+  "LeetCode/DP/1235_Maximum Profit in Job Scheduling.cpp": {
+    "id": "1235",
+    "title": "Maximum Profit in Job Scheduling",
+    "url": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/DP/1494_Parallel Courses II.cpp": {
+    "id": "1494",
+    "title": "Parallel Courses II",
+    "url": "https://leetcode.com/problems/parallel-courses-ii/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/DP/1879_Minimum XOR Sum of Two Arrays.cpp": {
+    "id": "1879",
+    "title": "Minimum XOR Sum of Two Arrays",
+    "url": "https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/DP/1986_Minimum Number of Work Sessions to Finish the Tasks.cpp": {
+    "id": "1986",
+    "title": "Minimum Number of Work Sessions to Finish the Tasks",
+    "url": "https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/DP/698_Partition to K Equal Sum Subsets.cpp": {
+    "id": "698",
+    "title": "Partition to K Equal Sum Subsets",
+    "url": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/MST/1584_Min Cost to Connect All Points.cpp": {
+    "id": "1584",
+    "title": "Min Cost to Connect All Points",
+    "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/누적합/1094_Car Pooling.cpp": {
+    "id": "1094",
+    "title": "Car Pooling",
+    "url": "https://leetcode.com/problems/car-pooling/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/누적합/1109_Corporate Flight Bookings.cpp": {
+    "id": "1109",
+    "title": "Corporate Flight Bookings",
+    "url": "https://leetcode.com/problems/corporate-flight-bookings/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/단조스택+큐/239_Sliding Window Maximum.cpp": {
+    "id": "239",
+    "title": "Sliding Window Maximum",
+    "url": "https://leetcode.com/problems/sliding-window-maximum/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/단조스택+큐/739_Daily Temperatures.cpp": {
+    "id": "739",
+    "title": "Daily Temperatures",
+    "url": "https://leetcode.com/problems/daily-temperatures/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/단조스택+큐/84_Largest Rectangle in Histogram.cpp": {
+    "id": "84",
+    "title": "Largest Rectangle in Histogram",
+    "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/매개변수탐색/410_Split Array Largest Sum.cpp": {
+    "id": "410",
+    "title": "Split Array Largest Sum",
+    "url": "https://leetcode.com/problems/split-array-largest-sum/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/비트마스킹/526_Beautiful+Arrangement.cpp": {
+    "id": "526",
+    "title": "Beautiful Arrangement",
+    "url": "https://leetcode.com/problems/beautiful-arrangement/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/슬라이딩윈도우/3_Longest Substring Without Repeating Characters.cpp": {
+    "id": "3",
+    "title": "Longest Substring Without Repeating Characters",
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/위상정렬/1203_Sort Items by Groups Respecting Dependencies.cpp": {
+    "id": "1203",
+    "title": "Sort Items by Groups Respecting Dependencies",
+    "url": "https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/위상정렬/2050_Parallel Courses III.cpp": {
+    "id": "2050",
+    "title": "Parallel Courses III",
+    "url": "https://leetcode.com/problems/parallel-courses-iii/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/정렬/347_Top K Frequent Elements.cpp": {
+    "id": "347",
+    "title": "Top K Frequent Elements",
+    "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/정렬/56_Merge Intervals.cpp": {
+    "id": "56",
+    "title": "Merge Intervals",
+    "url": "https://leetcode.com/problems/merge-intervals/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/최단거리/1514_Path with Maximum Probability.cpp": {
+    "id": "1514",
+    "title": "Path with Maximum Probability",
+    "url": "https://leetcode.com/problems/path-with-maximum-probability/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/최단거리/1976_Number of Ways to Arrive at Destination.cpp": {
+    "id": "1976",
+    "title": "Number of Ways to Arrive at Destination",
+    "url": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/최단거리/2203_Minimum Weighted Subgraph With the Required Paths.cpp": {
+    "id": "2203",
+    "title": "Minimum Weighted Subgraph With the Required Paths",
+    "url": "https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/",
+    "difficulty": "Hard",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/최단거리/787_Cheapest Flights Within K Stops.cpp": {
+    "id": "787",
+    "title": "Cheapest Flights Within K Stops",
+    "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "LeetCode/투포인터/209_Minimum Size Subarray Sum.cpp": {
+    "id": "209",
+    "title": "Minimum Size Subarray Sum",
+    "url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+    "difficulty": "Medium",
+    "difficultySource": "LeetCode",
+    "sourceUrl": "https://leetcode.com/api/problems/all/",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/DFS+BFS/네트워크.cpp": {
+    "id": "43162",
+    "title": "네트워크",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/43162",
+    "difficulty": "Lv. 3",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/43162",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/DFS+BFS/타겟+넘버.cpp": {
+    "id": "43165",
+    "title": "타겟 넘버",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/43165",
+    "difficulty": "Lv. 2",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/43165",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/DFS+BFS/퍼즐+조각+채우기.cpp": {
+    "id": "84021",
+    "title": "퍼즐 조각 채우기",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/84021",
+    "difficulty": "Lv. 3",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/84021",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/DP/도둑질.cpp": {
+    "id": "42897",
+    "title": "도둑질",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42897",
+    "difficulty": "Lv. 4",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42897",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/DP/등굣길.cpp": {
+    "id": "42898",
+    "title": "등굣길",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42898",
+    "difficulty": "Lv. 3",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42898",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/DP/정수+삼각형.cpp": {
+    "id": "43105",
+    "title": "정수 삼각형",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/43105",
+    "difficulty": "Lv. 3",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/43105",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/Greedy/구명보트.cpp": {
+    "id": "42885",
+    "title": "구명보트",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42885",
+    "difficulty": "Lv. 2",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42885",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/Greedy/단속카메라.cpp": {
+    "id": "42884",
+    "title": "단속카메라",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42884",
+    "difficulty": "Lv. 3",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42884",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/Greedy/섬+연결하기.cpp": {
+    "id": "42861",
+    "title": "섬 연결하기",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42861",
+    "difficulty": "Lv. 3",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42861",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/그래프/순위.cpp": {
+    "id": "49191",
+    "title": "순위",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/49191",
+    "difficulty": "Lv. 3",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/49191",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/스택+큐/기능개발.cpp": {
+    "id": "42586",
+    "title": "기능개발",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42586",
+    "difficulty": "Lv. 2",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42586",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/완전탐색/전력망을+둘로+나누기.cpp": {
+    "id": "86971",
+    "title": "전력망을 둘로 나누기",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/86971",
+    "difficulty": "Lv. 2",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/86971",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/완전탐색/최소직사각형.cpp": {
+    "id": "86491",
+    "title": "최소직사각형",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/86491",
+    "difficulty": "Lv. 1",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/86491",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/이분탐색/입국심사.cpp": {
+    "id": "43238",
+    "title": "입국심사",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/43238",
+    "difficulty": "Lv. 3",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/43238",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/정렬/가장+큰+수.cpp": {
+    "id": "42746",
+    "title": "가장 큰 수",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42746",
+    "difficulty": "Lv. 2",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42746",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/해시맵/완주하지+못한+선수.cpp": {
+    "id": "42576",
+    "title": "완주하지 못한 선수",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42576",
+    "difficulty": "Lv. 1",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42576",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/해시맵/전화번호+목록.cpp": {
+    "id": "42577",
+    "title": "전화번호 목록",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42577",
+    "difficulty": "Lv. 2",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42577",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Programmers/힙/더맵게.cpp": {
+    "id": "42626",
+    "title": "더 맵게",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42626",
+    "difficulty": "Lv. 2",
+    "difficultySource": "Programmers",
+    "sourceUrl": "https://school.programmers.co.kr/learn/courses/30/lessons/42626",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/1840_치즈.cpp": {
+    "id": "1840",
+    "title": "치즈",
+    "url": "https://jungol.co.kr/problem/1840",
+    "difficulty": "Gold IV",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/1840",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/1848_극장+좌석.cpp": {
+    "id": "1848",
+    "title": "극장 좌석",
+    "url": "https://jungol.co.kr/problem/1848",
+    "difficulty": "Silver II",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/1848",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/2553_특공대.cpp": {
+    "id": "2553",
+    "title": "특공대(commando)",
+    "url": "https://jungol.co.kr/problem/2553",
+    "difficulty": "Diamond V",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/2553",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/DP/1077_배낭채우기1.cpp": {
+    "id": "1077",
+    "title": "배낭채우기1",
+    "url": "https://jungol.co.kr/problem/1077",
+    "difficulty": "Gold V",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/1077",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/DP/2264_색상환.cpp": {
+    "id": "2264",
+    "title": "색상환",
+    "url": "https://jungol.co.kr/problem/2264",
+    "difficulty": "Gold III",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/2264",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/DP/2616_앱.cpp": {
+    "id": "2616",
+    "title": "앱(APP)",
+    "url": "https://jungol.co.kr/problem/2616",
+    "difficulty": "Gold III",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/2616",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/MST/1060_최소비용신장트리.cpp": {
+    "id": "1060",
+    "title": "최소비용신장트리",
+    "url": "https://jungol.co.kr/problem/1060",
+    "difficulty": "Gold IV",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/1060",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/그래프/1027_좋은수열.cpp": {
+    "id": "1027",
+    "title": "좋은수열",
+    "url": "https://jungol.co.kr/problem/1027",
+    "difficulty": "Gold IV",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/1027",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/그래프/1113_119구급대.cpp": {
+    "id": "1113",
+    "title": "119 구급대",
+    "url": "https://jungol.co.kr/problem/1113",
+    "difficulty": "Unranked",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/1113",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/그래프/1681_해밀턴+순환회로.cpp": {
+    "id": "1681",
+    "title": "해밀턴 순환회로",
+    "url": "https://jungol.co.kr/problem/1681",
+    "difficulty": "Silver I",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/1681",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/그래프/2261_경로+찾기.cpp": {
+    "id": "2261",
+    "title": "경로 찾기",
+    "url": "https://jungol.co.kr/problem/2261",
+    "difficulty": "Gold IV",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/2261",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/그래프/3078_물통.cpp": {
+    "id": "3078",
+    "title": "물통",
+    "url": "https://jungol.co.kr/problem/3078",
+    "difficulty": "Gold II",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/3078",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/그래프/3230_두+로봇.cpp": {
+    "id": "3230",
+    "title": "두 로봇",
+    "url": "https://jungol.co.kr/problem/3230",
+    "difficulty": "Gold III",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/3230",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/최단거리/2097_지하철.cpp": {
+    "id": "2097",
+    "title": "지하철",
+    "url": "https://jungol.co.kr/problem/2097",
+    "difficulty": "Gold III",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/2097",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "JUNGOL/트리/4947_트리의+지름.cpp": {
+    "id": "4947",
+    "title": "트리의 지름",
+    "url": "https://jungol.co.kr/problem/4947",
+    "difficulty": "Gold IV",
+    "difficultySource": "JUNGOL",
+    "sourceUrl": "https://jungol.co.kr/problem/4947",
+    "verifiedAt": "2026-10-21",
+    "verified": true
+  },
+  "Baekjoon/1028_다이아몬드+광산.cpp": {
+    "id": "1028",
+    "title": "다이아몬드 광산",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/14891_톱니바퀴.cpp": {
+    "id": "14891",
+    "title": "톱니바퀴",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/14891",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "simulation"
+    ]
+  },
+  "Baekjoon/1992_쿼드트리.cpp": {
+    "id": "1992",
+    "title": "쿼드트리",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1992",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "divide_and_conquer",
+      "recursion"
+    ]
+  },
+  "Baekjoon/2141_우체국.cpp": {
+    "id": "2141",
+    "title": "우체국",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2141",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "greedy",
+      "sorting"
+    ]
+  },
+  "Baekjoon/2533_사회망_서비스.cpp": {
+    "id": "2533",
+    "title": "사회망 서비스(SNS)",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2533",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "dp_tree",
+      "trees"
+    ]
+  },
+  "Baekjoon/DP/1005_ACM+Craft.cpp": {
+    "id": "1005",
+    "title": "ACM Craft",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1005",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "graphs",
+      "dag",
+      "topological_sorting"
+    ]
+  },
+  "Baekjoon/DP/1006_습격자+초라기.cpp": {
+    "id": "1006",
+    "title": "습격자 초라기",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/DP/1029_그림교환.cpp": {
+    "id": "1029",
+    "title": "그림교환",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/DP/11066_파일+합치기.cpp": {
+    "id": "11066",
+    "title": "파일 합치기",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11066",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp"
+    ]
+  },
+  "Baekjoon/DP/1106_호텔.cpp": {
+    "id": "1106",
+    "title": "호텔",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1106",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "knapsack"
+    ]
+  },
+  "Baekjoon/DP/1149_RGB거리.cpp": {
+    "id": "1149",
+    "title": "RGB거리",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1149",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp"
+    ]
+  },
+  "Baekjoon/DP/12181_Googlander.cpp": {
+    "id": "12181",
+    "title": "Googlander",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/DP/12865_평범한+배낭.cpp": {
+    "id": "12865",
+    "title": "평범한 배낭",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/12865",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "knapsack"
+    ]
+  },
+  "Baekjoon/DP/1463_1로+만들기.cpp": {
+    "id": "1463",
+    "title": "1로 만들기",
+    "difficulty": "Silver III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1463",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp"
+    ]
+  },
+  "Baekjoon/DP/17404_RGB거리2.cpp": {
+    "id": "17404",
+    "title": "RGB거리 2",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/17404",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp"
+    ]
+  },
+  "Baekjoon/DP/1932_정수+삼각형.cpp": {
+    "id": "1932",
+    "title": "정수 삼각형",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1932",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp"
+    ]
+  },
+  "Baekjoon/DP/2098_외판원+순회.cpp": {
+    "id": "2098",
+    "title": "외판원 순회",
+    "difficulty": "Gold I",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2098",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Gold/2098.%E2%80%85%EC%99%B8%ED%8C%90%EC%9B%90%E2%80%85%EC%88%9C%ED%9A%8C/README.md",
+    "sourceDate": "2024년 2월 20일 21:58:00",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/DP/2169_로봇조종하기.cpp": {
+    "id": "2169",
+    "title": "로봇 조종하기",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2169",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Gold/2169.%E2%80%85%EB%A1%9C%EB%B4%87%E2%80%85%EC%A1%B0%EC%A2%85%ED%95%98%EA%B8%B0/README.md",
+    "sourceDate": "2024년 7월 2일 11:55:52",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/DP/22963_3초+정렬.cpp": {
+    "id": "22963",
+    "title": "3초 정렬",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/DP/2579_계단+오르기.cpp": {
+    "id": "2579",
+    "title": "계단 오르기",
+    "difficulty": "Silver III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2579",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp"
+    ]
+  },
+  "Baekjoon/DP/9465_스티커.cpp": {
+    "id": "9465",
+    "title": "스티커",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/9465",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp"
+    ]
+  },
+  "Baekjoon/Greedy/1013_Contact.cpp": {
+    "id": "1013",
+    "title": "Contact",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1013",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Gold/1013.%E2%80%85Contact/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/Greedy/1026_보물.cpp": {
+    "id": "1026",
+    "title": "보물",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1026",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/1026.%E2%80%85%EB%B3%B4%EB%AC%BC/README.md",
+    "sourceDate": "2024년 1월 24일 01:00:15",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/Greedy/11047_동전0.cpp": {
+    "id": "11047",
+    "title": "동전 0",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11047",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "greedy"
+    ]
+  },
+  "Baekjoon/Greedy/11399_ATM.cpp": {
+    "id": "11399",
+    "title": "ATM",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11399",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "greedy",
+      "sorting"
+    ]
+  },
+  "Baekjoon/Greedy/11508_2+1세일.cpp": {
+    "id": "11508",
+    "title": "2+1 세일",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11508",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "greedy",
+      "sorting"
+    ]
+  },
+  "Baekjoon/Greedy/13904_과제.cpp": {
+    "id": "13904",
+    "title": "과제",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/Greedy/1931_회의실+배정.cpp": {
+    "id": "1931",
+    "title": "회의실 배정",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1931",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "greedy",
+      "sorting"
+    ]
+  },
+  "Baekjoon/MST/1197_최소+스패닝+트리.cpp": {
+    "id": "1197",
+    "title": "최소 스패닝 트리",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1197",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "mst",
+      "graphs"
+    ]
+  },
+  "Baekjoon/MST/1647_도시+분할+계획.cpp": {
+    "id": "1647",
+    "title": "도시 분할 계획",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1647",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "mst"
+    ]
+  },
+  "Baekjoon/MST/2887_행성+터널.cpp": {
+    "id": "2887",
+    "title": "행성 터널",
+    "difficulty": "Platinum V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2887",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "sorting",
+      "mst"
+    ]
+  },
+  "Baekjoon/Union-find/10775_공항.cpp": {
+    "id": "10775",
+    "title": "공항",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/10775",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "data_structures",
+      "greedy",
+      "disjoint_set"
+    ]
+  },
+  "Baekjoon/구현+시뮬레이션/1018_체스판+다시+칠하기.cpp": {
+    "id": "1018",
+    "title": "체스판 다시 칠하기",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1018",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "bruteforcing"
+    ]
+  },
+  "Baekjoon/구현+시뮬레이션/10798_세로읽기.cpp": {
+    "id": "10798",
+    "title": "세로읽기",
+    "difficulty": "Bronze I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/10798",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "string"
+    ]
+  },
+  "Baekjoon/구현+시뮬레이션/1158_요세푸스+문제.cpp": {
+    "id": "1158",
+    "title": "요세푸스 문제",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1158",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "data_structures",
+      "queue"
+    ]
+  },
+  "Baekjoon/구현+시뮬레이션/1453_피시방+알바.cpp": {
+    "id": "1453",
+    "title": "피시방 알바",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/구현+시뮬레이션/1475_방+번호.cpp": {
+    "id": "1475",
+    "title": "방 번호",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/구현+시뮬레이션/15683_감시.cpp": {
+    "id": "15683",
+    "title": "감시",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/15683",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "bruteforcing",
+      "simulation",
+      "backtracking"
+    ]
+  },
+  "Baekjoon/구현+시뮬레이션/17144_미세먼지+안녕!.cpp": {
+    "id": "17144",
+    "title": "미세먼지 안녕!",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/17144",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "simulation"
+    ]
+  },
+  "Baekjoon/구현+시뮬레이션/23290_마법사+상어와+복제.cpp": {
+    "id": "23290",
+    "title": "마법사 상어와 복제",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/구현+시뮬레이션/2979_트럭+주차.cpp": {
+    "id": "2979",
+    "title": "트럭 주차",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/구현+시뮬레이션/3190_뱀.cpp": {
+    "id": "3190",
+    "title": "뱀",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/3190",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "data_structures",
+      "simulation",
+      "deque",
+      "queue"
+    ]
+  },
+  "Baekjoon/구현+시뮬레이션/7568_덩치.cpp": {
+    "id": "7568",
+    "title": "덩치",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/7568",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "bruteforcing"
+    ]
+  },
+  "Baekjoon/구현+시뮬레이션/9328_열쇠.cpp": {
+    "id": "9328",
+    "title": "열쇠",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/그래프/1022_유기농+배추.cpp": {
+    "id": "1012",
+    "title": "유기농 배추",
+    "difficulty": "Silver II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1012",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "dfs",
+      "grid_graph",
+      "flood_fill"
+    ],
+    "fileNote": "파일명 번호는 1022이지만 코드와 제목은 1012 유기농 배추에 해당합니다. 원본 파일명은 유지했습니다."
+  },
+  "Baekjoon/그래프/1167_트리의+지름.cpp": {
+    "id": "1167",
+    "title": "트리의 지름",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1167",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "trees",
+      "dfs",
+      "tree_diameter"
+    ]
+  },
+  "Baekjoon/그래프/11724_연결+요소의+개수.cpp": {
+    "id": "11724",
+    "title": "연결 요소의 개수",
+    "difficulty": "Silver II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11724",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "dfs"
+    ]
+  },
+  "Baekjoon/그래프/14502_연구소.cpp": {
+    "id": "14502",
+    "title": "연구소",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/14502",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "graphs",
+      "bruteforcing",
+      "graph_traversal",
+      "bfs",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/14940_쉬운+최단거리.cpp": {
+    "id": "14940",
+    "title": "쉬운 최단거리",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/14940",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/1525_퍼즐.cpp": {
+    "id": "1525",
+    "title": "퍼즐",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/그래프/16724_피리+부는+사나이.cpp": {
+    "id": "16724",
+    "title": "피리 부는 사나이",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/16724",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "data_structures",
+      "graph_traversal",
+      "dfs",
+      "disjoint_set",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/16946_벽+부수고+이동하기4.cpp": {
+    "id": "16946",
+    "title": "벽 부수고 이동하기 4",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/16946",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Gold/16946.%E2%80%85%EB%B2%BD%E2%80%85%EB%B6%80%EC%88%98%EA%B3%A0%E2%80%85%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0%E2%80%854/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/그래프/1697_숨바꼭질.cpp": {
+    "id": "1697",
+    "title": "숨바꼭질",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1697",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/1707_이분+그래프.cpp": {
+    "id": "1707",
+    "title": "이분 그래프",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1707",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "dfs",
+      "bipartite_graph"
+    ]
+  },
+  "Baekjoon/그래프/17090_미로+탈출하기.cpp": {
+    "id": "17090",
+    "title": "미로 탈출하기",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/17090",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "graphs",
+      "graph_traversal",
+      "dfs"
+    ]
+  },
+  "Baekjoon/그래프/18809_Gaaaaaaaaarden.cpp": {
+    "id": "18809",
+    "title": "Gaaaaaaaaaarden",
+    "difficulty": "Gold I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/18809",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "graphs",
+      "bruteforcing",
+      "graph_traversal",
+      "simulation",
+      "bfs"
+    ]
+  },
+  "Baekjoon/그래프/1926_그림.cpp": {
+    "id": "1926",
+    "title": "그림",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1926",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "dfs",
+      "grid_graph",
+      "flood_fill"
+    ]
+  },
+  "Baekjoon/그래프/1987_알파벳.cpp": {
+    "id": "1987",
+    "title": "알파벳",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1987",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "dfs",
+      "backtracking",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/2178_미로+탐색.cpp": {
+    "id": "2178",
+    "title": "미로 탐색",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2178",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/2206_벽+부수고+이동하기.cpp": {
+    "id": "2206",
+    "title": "벽 부수고 이동하기",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2206",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/2468_안전+영역.cpp": {
+    "id": "2468",
+    "title": "안전 영역",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2468",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/2468.%E2%80%85%EC%95%88%EC%A0%84%E2%80%85%EC%98%81%EC%97%AD/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/그래프/2573_빙산.cpp": {
+    "id": "2573",
+    "title": "빙산",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2573",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "dfs"
+    ]
+  },
+  "Baekjoon/그래프/2606_바이러스.cpp": {
+    "id": "2606",
+    "title": "바이러스",
+    "difficulty": "Silver III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2606",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "dfs"
+    ]
+  },
+  "Baekjoon/그래프/2667_단지번호붙이기.cpp": {
+    "id": "2667",
+    "title": "단지번호붙이기",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2667",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "dfs",
+      "grid_graph",
+      "flood_fill"
+    ]
+  },
+  "Baekjoon/그래프/3197_백조의+호수.cpp": {
+    "id": "3197",
+    "title": "백조의 호수",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/그래프/4179_불!.cpp": {
+    "id": "4179",
+    "title": "불!",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/4179",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/4963_섬의+개수.cpp": {
+    "id": "4963",
+    "title": "섬의 개수",
+    "difficulty": "Silver II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/4963",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "dfs",
+      "grid_graph",
+      "flood_fill"
+    ]
+  },
+  "Baekjoon/그래프/5214_환승.cpp": {
+    "id": "5214",
+    "title": "환승",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/그래프/6087_레이저+통신.cpp": {
+    "id": "6087",
+    "title": "레이저 통신",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/6087",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "shortest_path",
+      "dijkstra",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/그래프/6593_상범+빌딩.cpp": {
+    "id": "6593",
+    "title": "상범 빌딩",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/그래프/7576_토마토.cpp": {
+    "id": "7576",
+    "title": "토마토",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/7576",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "bfs",
+      "graphs",
+      "graph_traversal",
+      "grid_graph",
+      "shortest_path"
+    ]
+  },
+  "Baekjoon/그래프/9466_텀+프로젝트.cpp": {
+    "id": "9466",
+    "title": "텀 프로젝트",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/9466",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "dfs"
+    ]
+  },
+  "Baekjoon/누적합/10986_나머지+합.cpp": {
+    "id": "10986",
+    "title": "나머지 합",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/10986",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "math",
+      "prefix_sum"
+    ]
+  },
+  "Baekjoon/누적합/11659_구간+합+구하기+4.cpp": {
+    "id": "11659",
+    "title": "구간 합 구하기 4",
+    "difficulty": "Silver III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11659",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "prefix_sum"
+    ]
+  },
+  "Baekjoon/누적합/1749_점수+따먹기.cpp": {
+    "id": "1749",
+    "title": "점수따먹기",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1749",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "bruteforcing",
+      "prefix_sum"
+    ]
+  },
+  "Baekjoon/누적합/1806_부분합.cpp": {
+    "id": "1806",
+    "title": "부분합",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1806",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "prefix_sum",
+      "two_pointer"
+    ]
+  },
+  "Baekjoon/매개변수탐색/16401_과자+나눠주기.cpp": {
+    "id": "16401",
+    "title": "과자 나눠주기",
+    "difficulty": "Silver II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/16401",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "binary_search",
+      "parametric_search"
+    ]
+  },
+  "Baekjoon/매개변수탐색/1654_랜선+자르기.cpp": {
+    "id": "1654",
+    "title": "랜선 자르기",
+    "difficulty": "Silver II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1654",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "binary_search",
+      "parametric_search"
+    ]
+  },
+  "Baekjoon/매개변수탐색/2110_공유기+설치.cpp": {
+    "id": "2110",
+    "title": "공유기 설치",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2110",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "binary_search",
+      "parametric_search"
+    ]
+  },
+  "Baekjoon/문자열/1316_그룹+단어+체커.cpp": {
+    "id": "1316",
+    "title": "그룹 단어 체커",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1316",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "string"
+    ]
+  },
+  "Baekjoon/문자열/2941_크로아티아+알파벳.cpp": {
+    "id": "2941",
+    "title": "크로아티아 알파벳",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2941",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "string"
+    ]
+  },
+  "Baekjoon/문자열/9012_괄호.cpp": {
+    "id": "9012",
+    "title": "괄호",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/9012",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "data_structures",
+      "string",
+      "stack"
+    ]
+  },
+  "Baekjoon/백트래킹/1182_부분수열의+합.cpp": {
+    "id": "1182",
+    "title": "부분수열의 합",
+    "difficulty": "Silver II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1182",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "bruteforcing",
+      "backtracking"
+    ]
+  },
+  "Baekjoon/백트래킹/15649_N과+M_1.cpp": {
+    "id": "15649",
+    "title": "N과 M (1)",
+    "difficulty": "Silver III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/15649",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "backtracking"
+    ]
+  },
+  "Baekjoon/백트래킹/15650_N과+M.cpp": {
+    "id": "15650",
+    "title": "N과 M (2)",
+    "difficulty": "Silver III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/15650",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "backtracking"
+    ]
+  },
+  "Baekjoon/백트래킹/9663_N-Queen.cpp": {
+    "id": "9663",
+    "title": "N-Queen",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/9663",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "bruteforcing",
+      "backtracking"
+    ]
+  },
+  "Baekjoon/비트마스킹/15661_링크와+스타트.cpp": {
+    "id": "15661",
+    "title": "링크와 스타트",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/15661",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "bruteforcing",
+      "bitmask",
+      "backtracking"
+    ]
+  },
+  "Baekjoon/수학/1024_수열의+합.cpp": {
+    "id": "1024",
+    "title": "수열의 합",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/수학/1676_팩토리얼+0의+개수.cpp": {
+    "id": "1676",
+    "title": "팩토리얼 0의 개수",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1676",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/1676.%E2%80%85%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC%E2%80%850%EC%9D%98%E2%80%85%EA%B0%9C%EC%88%98/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/완전탐색/1027_고층+건물.cpp": {
+    "id": "1027",
+    "title": "고층 건물",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/완전탐색/1107_리모컨.cpp": {
+    "id": "1107",
+    "title": "리모컨",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1107",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "bruteforcing"
+    ]
+  },
+  "Baekjoon/완전탐색/1436_영화감독+숌.cpp": {
+    "id": "1436",
+    "title": "영화감독 숌",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1436",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "bruteforcing"
+    ]
+  },
+  "Baekjoon/우선순위큐/1655_가운데를+말해요.cpp": {
+    "id": "1655",
+    "title": "가운데를 말해요",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1655",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "data_structures",
+      "priority_queue"
+    ]
+  },
+  "Baekjoon/위상정렬/14907_프로젝트+스케줄링.cpp": {
+    "id": "14907",
+    "title": "프로젝트 스케줄링",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/위상정렬/1766_문제집.cpp": {
+    "id": "1766",
+    "title": "문제집",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1766",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "data_structures",
+      "priority_queue",
+      "dag",
+      "topological_sorting"
+    ]
+  },
+  "Baekjoon/위상정렬/2056_작업.cpp": {
+    "id": "2056",
+    "title": "작업",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2056",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "graphs",
+      "dag",
+      "topological_sorting"
+    ]
+  },
+  "Baekjoon/위상정렬/2252_줄+세우기.cpp": {
+    "id": "2252",
+    "title": "줄 세우기",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2252",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "dag",
+      "topological_sorting"
+    ]
+  },
+  "Baekjoon/위상정렬/2623_음악프로그램.cpp": {
+    "id": "2623",
+    "title": "음악프로그램",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2623",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "dag",
+      "topological_sorting"
+    ]
+  },
+  "Baekjoon/위상정렬/2637_장난감+조립.cpp": {
+    "id": "2637",
+    "title": "장난감 조립",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2637",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "graphs",
+      "dag",
+      "topological_sorting"
+    ]
+  },
+  "Baekjoon/이분탐색/2143_두+배열의+합.cpp": {
+    "id": "2143",
+    "title": "두 배열의 합",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2143",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "data_structures",
+      "binary_search",
+      "set",
+      "prefix_sum",
+      "hash_set"
+    ]
+  },
+  "Baekjoon/이분탐색/6236_용돈+관리.cpp": {
+    "id": "6236",
+    "title": "용돈 관리",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/6236",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "binary_search",
+      "parametric_search"
+    ]
+  },
+  "Baekjoon/자료구조/10773_제로.cpp": {
+    "id": "10773",
+    "title": "제로",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/10773",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/10773.%E2%80%85%EC%A0%9C%EB%A1%9C/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/자료구조/10828_스택.cpp": {
+    "id": "10828",
+    "title": "스택",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/10828",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "implementation",
+      "data_structures",
+      "stack"
+    ]
+  },
+  "Baekjoon/자료구조/10845_큐.cpp": {
+    "id": "10845",
+    "title": "큐",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/10845",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "data_structures",
+      "queue"
+    ]
+  },
+  "Baekjoon/자료구조/11866_요세푸스+문제.cpp": {
+    "id": "11866",
+    "title": "요세푸스 문제 0",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11866",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/11866.%E2%80%85%EC%9A%94%EC%84%B8%ED%91%B8%EC%8A%A4%E2%80%85%EB%AC%B8%EC%A0%9C%E2%80%850/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/자료구조/12789_도키도키+간식드리미.cpp": {
+    "id": "12789",
+    "title": "도키도키 간식드리미",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/자료구조/2161_카드1.cpp": {
+    "id": "2161",
+    "title": "카드1",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/자료구조/2164_카드2.cpp": {
+    "id": "2164",
+    "title": "카드2",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2164",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "data_structures",
+      "queue"
+    ]
+  },
+  "Baekjoon/재귀_분할정복/1030_프랙탈+평면.cpp": {
+    "id": "1030",
+    "title": "프렉탈 평면",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1030",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "divide_and_conquer",
+      "implementation",
+      "recursion"
+    ]
+  },
+  "Baekjoon/재귀_분할정복/1074_Z.cpp": {
+    "id": "1074",
+    "title": "Z",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1074",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "divide_and_conquer",
+      "recursion"
+    ]
+  },
+  "Baekjoon/정렬/10814_나이순+정렬.cpp": {
+    "id": "10814",
+    "title": "나이순 정렬",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/10814",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/10814.%E2%80%85%EB%82%98%EC%9D%B4%EC%88%9C%E2%80%85%EC%A0%95%EB%A0%AC/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/정렬/11650_좌표+정렬하기.cpp": {
+    "id": "11650",
+    "title": "좌표 정렬하기",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11650",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/11650.%E2%80%85%EC%A2%8C%ED%91%9C%E2%80%85%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/정렬/11651_좌표+정렬하기+2.cpp": {
+    "id": "11651",
+    "title": "좌표 정렬하기 2",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11651",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/11651.%E2%80%85%EC%A2%8C%ED%91%9C%E2%80%85%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0%E2%80%852/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/정렬/1181_단어+정렬.cpp": {
+    "id": "1181",
+    "title": "단어 정렬",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1181",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "string",
+      "sorting"
+    ]
+  },
+  "Baekjoon/정렬/1427_소트인사이드.cpp": {
+    "id": "1427",
+    "title": "소트인사이드",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1427",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/1427.%E2%80%85%EC%86%8C%ED%8A%B8%EC%9D%B8%EC%82%AC%EC%9D%B4%EB%93%9C/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/정렬/2170_선+긋기.cpp": {
+    "id": "2170",
+    "title": "선 긋기",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2170",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Gold/2170.%E2%80%85%EC%84%A0%E2%80%85%EA%B8%8B%EA%B8%B0/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/정렬/2751_수+정렬하기+2.cpp": {
+    "id": "2751",
+    "title": "수 정렬하기 2",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2751",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/2751.%E2%80%85%EC%88%98%E2%80%85%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0%E2%80%852/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/정렬/5635_생일.cpp": {
+    "id": "5635",
+    "title": "생일",
+    "difficulty": "Silver V",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/5635",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/5635.%E2%80%85%EC%83%9D%EC%9D%BC/README.md",
+    "sourceDate": "2024년 3월 13일 17:43:16",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/최단거리/11404_플로이드.cpp": {
+    "id": "11404",
+    "title": "플로이드",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11404",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "floyd_warshall"
+    ]
+  },
+  "Baekjoon/최단거리/1162_도로포장.cpp": {
+    "id": "1162",
+    "title": "도로포장",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/최단거리/11779_최소비용+구하기2.cpp": {
+    "id": "11779",
+    "title": "최소비용 구하기 2",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11779",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra",
+      "traceback"
+    ]
+  },
+  "Baekjoon/최단거리/11780_플로이드2.cpp": {
+    "id": "11780",
+    "title": "플로이드 2",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11780",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "floyd_warshall",
+      "traceback"
+    ]
+  },
+  "Baekjoon/최단거리/1238_파티.cpp": {
+    "id": "1238",
+    "title": "파티",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1238",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra"
+    ]
+  },
+  "Baekjoon/최단거리/1261_알고스팟.cpp": {
+    "id": "1261",
+    "title": "알고스팟",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1261",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "shortest_path",
+      "dijkstra",
+      "grid_graph",
+      "0_1_bfs"
+    ]
+  },
+  "Baekjoon/최단거리/13308_주유쇼.cpp": {
+    "id": "13308",
+    "title": "주유쇼",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/최단거리/13549_숨바꼭질3.cpp": {
+    "id": "13549",
+    "title": "숨바꼭질 3",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/13549",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "shortest_path",
+      "dijkstra",
+      "0_1_bfs"
+    ]
+  },
+  "Baekjoon/최단거리/14938_서강그라운드.cpp": {
+    "id": "14938",
+    "title": "서강그라운드",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/14938",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra",
+      "floyd_warshall"
+    ]
+  },
+  "Baekjoon/최단거리/1504_특정한+최단+경로.cpp": {
+    "id": "1504",
+    "title": "특정한 최단 경로",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1504",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra"
+    ]
+  },
+  "Baekjoon/최단거리/1719_택배.cpp": {
+    "id": "1719",
+    "title": "택배",
+    "difficulty": "Gold III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1719",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra",
+      "floyd_warshall"
+    ]
+  },
+  "Baekjoon/최단거리/17396_백도어.cpp": {
+    "id": "17396",
+    "title": "백도어",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/17396",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra"
+    ]
+  },
+  "Baekjoon/최단거리/1753_최단경로.cpp": {
+    "id": "1753",
+    "title": "최단경로",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1753",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra"
+    ]
+  },
+  "Baekjoon/최단거리/17835_면접보는+승범이네.cpp": {
+    "id": "17835",
+    "title": "면접보는 승범이네",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/17835",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Gold/17835.%E2%80%85%EB%A9%B4%EC%A0%91%EB%B3%B4%EB%8A%94%E2%80%85%EC%8A%B9%EB%B2%94%EC%9D%B4%EB%84%A4/README.md",
+    "sourceDate": "2024년 1월 9일 09:41:40",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  },
+  "Baekjoon/최단거리/1800_인터넷+설치.cpp": {
+    "id": "1800",
+    "title": "인터넷 설치",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/최단거리/1854_K번째+최단경로+찾기.cpp": {
+    "id": "1854",
+    "title": "K번째 최단경로 찾기",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/최단거리/1916_최소비용구하기.cpp": {
+    "id": "1916",
+    "title": "최소비용 구하기",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1916",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra"
+    ]
+  },
+  "Baekjoon/최단거리/1956_운동.cpp": {
+    "id": "1956",
+    "title": "운동",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1956",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "floyd_warshall"
+    ]
+  },
+  "Baekjoon/최단거리/2211_네트워크+복구.cpp": {
+    "id": "2211",
+    "title": "네트워크 복구",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2211",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra"
+    ]
+  },
+  "Baekjoon/최단거리/2665_미로만들기.cpp": {
+    "id": "2665",
+    "title": "미로만들기",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2665",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "bfs",
+      "shortest_path",
+      "dijkstra",
+      "grid_graph",
+      "0_1_bfs"
+    ]
+  },
+  "Baekjoon/최단거리/4485_녹색+옷+입은+애가+젤다지.cpp": {
+    "id": "4485",
+    "title": "녹색 옷 입은 애가 젤다지?",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/4485",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "shortest_path",
+      "dijkstra",
+      "grid_graph"
+    ]
+  },
+  "Baekjoon/최단거리/5719_거의+최단+경로.cpp": {
+    "id": "5719",
+    "title": "거의 최단 경로",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/최단거리/5972_택배+배송.cpp": {
+    "id": "5972",
+    "title": "택배 배송",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/5972",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra"
+    ]
+  },
+  "Baekjoon/최단거리/9370_미확인+도착지.cpp": {
+    "id": "9370",
+    "title": "미확인 도착지",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/9370",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "shortest_path",
+      "dijkstra"
+    ]
+  },
+  "Baekjoon/투포인터/1253_좋다.cpp": {
+    "id": "1253",
+    "title": "좋다",
+    "difficulty": null,
+    "verified": false,
+    "verificationNote": "원문 조회 제한으로 난이도를 확인하지 못했습니다."
+  },
+  "Baekjoon/투포인터/2003_수들의+합+2.cpp": {
+    "id": "2003",
+    "title": "수들의 합 2",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2003",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "bruteforcing",
+      "prefix_sum",
+      "two_pointer"
+    ]
+  },
+  "Baekjoon/투포인터/2467_용액.cpp": {
+    "id": "2467",
+    "title": "용액",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/2467",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "binary_search",
+      "two_pointer"
+    ]
+  },
+  "Baekjoon/투포인터/3273_두+수의+합.cpp": {
+    "id": "3273",
+    "title": "두 수의 합",
+    "difficulty": "Silver III",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/3273",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "sorting",
+      "two_pointer"
+    ]
+  },
+  "Baekjoon/투포인터/7453_합이+0인+네+정수.cpp": {
+    "id": "7453",
+    "title": "합이 0인 네 정수",
+    "difficulty": "Gold II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/7453",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "sorting",
+      "binary_search",
+      "two_pointer",
+      "mitm"
+    ]
+  },
+  "Baekjoon/트리/11725_트리의+부모+찾기.cpp": {
+    "id": "11725",
+    "title": "트리의 부모 찾기",
+    "difficulty": "Silver II",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/11725",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "trees",
+      "bfs",
+      "dfs"
+    ]
+  },
+  "Baekjoon/트리/15481_트리와+쿼리.cpp": {
+    "id": "15681",
+    "title": "트리와 쿼리",
+    "difficulty": "Gold V",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/15681",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "dp",
+      "graphs",
+      "graph_traversal",
+      "trees",
+      "dfs",
+      "dp_tree"
+    ],
+    "fileNote": "파일명 번호는 15481이지만 코드와 제목은 15681 트리와 쿼리에 해당합니다. 원본 파일명은 유지했습니다."
+  },
+  "Baekjoon/트리/1967_트리의+지름.cpp": {
+    "id": "1967",
+    "title": "트리의 지름",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1967",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "trees",
+      "dfs",
+      "tree_diameter"
+    ]
+  },
+  "Baekjoon/트리/1991_트리+순회.cpp": {
+    "id": "1991",
+    "title": "트리 순회",
+    "difficulty": "Silver I",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1991",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "trees",
+      "recursion"
+    ]
+  },
+  "Baekjoon/트리/3584_가장+가까운+공통+조상.cpp": {
+    "id": "3584",
+    "title": "가장 가까운 공통 조상",
+    "difficulty": "Gold IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/3584",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "graphs",
+      "graph_traversal",
+      "trees",
+      "dfs",
+      "lca"
+    ]
+  },
+  "Baekjoon/해시/1764_듣보잡.cpp": {
+    "id": "1764",
+    "title": "듣보잡",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1764",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "data_structures",
+      "string",
+      "sorting",
+      "set",
+      "hash_set"
+    ]
+  },
+  "Baekjoon/해시/1920_수+찾기.cpp": {
+    "id": "1920",
+    "title": "수 찾기",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac의 직접 조회가 제한되어 tony9402/baekjoon의 공개 메타데이터 기록과 대조했습니다. 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/1920",
+    "difficultySource": "solved.ac · 공개 목록 기록",
+    "sourceUrl": "https://github.com/tony9402/baekjoon/blob/main/scripts/database.json",
+    "verifiedAt": "2026-10-21",
+    "snapshot": true,
+    "tags": [
+      "data_structures",
+      "sorting",
+      "binary_search",
+      "hash_set"
+    ]
+  },
+  "Baekjoon/해시/25192_인사성+밝은+곰곰이.cpp": {
+    "id": "25192",
+    "title": "인사성 밝은 곰곰이",
+    "difficulty": "Silver IV",
+    "verified": true,
+    "verificationNote": "solved.ac 직접 조회가 제한되어 BaekjoonHub 공개 제출 기록의 제목·링크·등급과 대조했습니다. 제출 당시 기록이며 현재 등급과 다를 수 있습니다.",
+    "url": "https://www.acmicpc.net/problem/25192",
+    "sourceUrl": "https://github.com/sangilji/codingTest/blob/main/%EB%B0%B1%EC%A4%80/Silver/25192.%E2%80%85%EC%9D%B8%EC%82%AC%EC%84%B1%E2%80%85%EB%B0%9D%EC%9D%80%E2%80%85%EA%B3%B0%EA%B3%B0%EC%9D%B4/README.md",
+    "difficultySource": "solved.ac · 공개 제출 기록",
+    "verifiedAt": "2026-10-22",
+    "snapshot": true
+  }
+}

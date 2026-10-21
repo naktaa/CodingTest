@@ -1,0 +1,28 @@
+{
+  "name": "codingtest-study-page",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/sync-solutions.mjs && vite --host 127.0.0.1",
+    "build": "node scripts/sync-solutions.mjs && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "sync": "node scripts/sync-solutions.mjs",
+    "check": "node scripts/check-content.mjs",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource-variable/noto-sans-kr": "^5.3.1",
+    "prismjs": "^1.30.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "vite": "^7.3.0"
+  }
+}
