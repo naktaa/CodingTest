@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "file": "sliding-fixed-sum",
+      "passed": true,
+      "standaloneHeaders": true,
+      "sampleTrace": true
+    },
+    {
+      "file": "sliding-min-sum",
+      "passed": true,
+      "standaloneHeaders": true,
+      "sampleTrace": true
+    },
+    {
+      "file": "binary-upper-bound",
+      "passed": true,
+      "standaloneHeaders": true,
+      "sampleTrace": true
+    },
+    {
+      "file": "dfs-iterative",
+      "passed": true,
+      "standaloneHeaders": true,
+      "sampleTrace": true
+    },
+    {
+      "file": "floyd-reachability",
+      "passed": true,
+      "standaloneHeaders": true,
+      "sampleTrace": true
+    },
+    {
+      "file": "dp-min-coins",
+      "passed": true,
+      "standaloneHeaders": true,
+      "sampleTrace": true
+    }
+  ]
+}

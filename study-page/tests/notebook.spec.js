@@ -24,13 +24,21 @@ test('45개 주제의 본문·추적표·원본 템플릿·목차', async ({page
     for(const topic of catalog){
         await page.goto(`/topics/${topic.id}`);
         await expect(page.locator('h1')).toHaveText(topic.title);
-        await expect(page.locator('article section')).toHaveCount(8);
+        await expect(page.locator('article section')).toHaveCount(6);
         await expect(page.locator('#trace tbody tr')).not.toHaveCount(0);
-        expect(await page.locator('#template .code-block pre code').textContent()).toBe(await template(topic.id));
+        expect(await page.locator('#template .code-block pre code').first().textContent()).toBe(await template(topic.id));
         expect(await page.locator('pre').evaluateAll(els=>els.every(el=>el.scrollHeight<=el.clientHeight+2))).toBe(true);
-        await expect(page.locator('.toc nav a')).toHaveCount(8);
-        expect(await page.locator('#template').evaluate(el=>el.compareDocumentPosition(document.querySelector('#variables')) & Node.DOCUMENT_POSITION_FOLLOWING)).toBeTruthy();
+        await expect(page.locator('.toc nav a')).toHaveCount(6);
+        expect(await page.locator('#template .code-block').first().evaluate(el=>el.compareDocumentPosition(document.querySelector('#variables')) & Node.DOCUMENT_POSITION_FOLLOWING)).toBeTruthy();
         const data=JSON.parse(await fs.readFile(new URL(`../src/content/topics/${topic.id}.json`,import.meta.url),'utf8'));
+        for (const [before,after] of [['concept','forms'],['forms','template'],['template','trace'],['trace','mistakes']]) {
+            expect(await page.locator(`#${before}`).evaluate((el,id)=>Boolean(el.compareDocumentPosition(document.getElementById(id)) & Node.DOCUMENT_POSITION_FOLLOWING),after)).toBe(true);
+        }
+        for (const extra of data.overview.extraTemplates) {
+            const original=await fs.readFile(new URL(`../templates/variants/${extra.file}.cpp`,import.meta.url),'utf8');
+            expect(await page.locator(`[data-variant="${extra.file}"] pre code`).textContent()).toBe(original);
+            await expect(page.locator(`[data-example="${extra.file}"] tbody tr`)).toHaveCount(extra.example.rows.length);
+        }
         const lines=(await template(topic.id)).trimEnd().split('\n');
         for (const [i,part] of data.lesson.walkthrough.entries()) expect(await page.locator('#steps pre code').nth(i).textContent()).toBe(lines.slice(part.from-1,part.to).join('\n'));
 
@@ -96,7 +104,7 @@ test('복사한 템플릿이 원본과 동일', async ({page,context}) => {
     await page.goto('/topics/segment-tree');
     await page.getByRole('button',{name:'C++17 · 전체 템플릿 코드 복사'}).click();
     expect(await page.evaluate(()=>navigator.clipboard.readText())).toBe(await template('segment-tree'));
-    await expect(page.locator('#template [role=status]')).toContainText('복사 완료');
+    await expect(page.locator('#template [role=status]').first()).toContainText('복사 완료');
 });
 
 test('원본 풀이의 코드·링크·난이도', async ({page}) => {
@@ -149,9 +157,9 @@ test('모바일 메뉴 포커스·Escape·문서 가독성', async ({page}) => {
     await expect(page.locator('h1')).toHaveText('슬라이딩 윈도우');
     await expect(page.getByRole('dialog')).not.toBeVisible();
     await page.locator('.inline-toc summary').click();
-    await page.locator('.inline-toc a[href="#steps"]').click();
-    await expect(page).toHaveURL(/#steps$/);
-    await expect(page.locator('#steps')).toBeInViewport();
+    await page.locator('.inline-toc a[href="#template"]').click();
+    await expect(page).toHaveURL(/#template$/);
+    await expect(page.locator('#template')).toBeInViewport();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     expect(await page.locator('pre').evaluateAll(els=>els.every(el=>el.scrollHeight<=el.clientHeight+2))).toBe(true);
 });

@@ -1,6 +1,6 @@
 {
   "compiler": "g++ -std=c++17 -O2 -fsanitize=undefined -fno-sanitize-recover=undefined -Wall -Wextra -pedantic",
-  "elapsedSeconds": 36.15,
+  "elapsedSeconds": 27.65,
   "results": [
     {
       "id": "complexity",

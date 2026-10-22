@@ -59,7 +59,7 @@ test('흰 본문·18px 설명·16px 코드와 표·전체 코드 펼침', async 
             await page.goto(`/topics/${id}`);
             expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`${id} @${width}`).toBe(true);
             expect(await page.locator('#conditions p').first().evaluate(el=>getComputedStyle(el).fontSize)).toBe('18px');
-            expect(await page.locator('#template pre').evaluate(el=>getComputedStyle(el).fontSize)).toBe('16px');
+            expect(await page.locator('#template pre').first().evaluate(el=>getComputedStyle(el).fontSize)).toBe('16px');
             expect(await page.locator('#variables table').evaluate(el=>getComputedStyle(el).fontSize)).toBe('16px');
             const blocks=await page.locator('pre').evaluateAll(els=>els.map(el=>({height:el.scrollHeight,visible:el.clientHeight})));
             expect(blocks.every(b=>b.height<=b.visible+2)).toBe(true);
@@ -84,7 +84,7 @@ test('단계 버튼 키보드 조작과 모바일 줄 강조',async({page})=>{
 
 test('설명 속 C++ 간격·단항 연산·템플릿·시각화 입력·수식 검색', async ({page}) => {
     await page.goto('/topics/euler-tour');
-    await expect(page.locator('#conditions')).toContainText('1 <= N <= 200000');
+    await expect(page.locator('#template')).toContainText('1 <= N <= 200000');
     await expect(page.locator('#steps')).toContainText('tin[now] = timer, order[timer] = now');
     await expect(page.locator('#trace')).toContainText('tin[0] = 0, timer = 1');
     await page.goto('/topics/bits');
@@ -100,4 +100,29 @@ test('설명 속 C++ 간격·단항 연산·템플릿·시각화 입력·수식 
         await page.goto(`/search?q=${encodeURIComponent(query)}`);
         await expect(page.locator('.search-results a[href="/topics/euler-tour"]')).toBeVisible();
     }
+});
+
+
+test('공통 원리 뒤에 형태별 템플릿·예제 배치', async ({page}) => {
+    await page.goto('/topics/sliding-window');
+    await expect(page.locator('#concept')).toContainText('연속 구간');
+    await expect(page.locator('#concept')).not.toContainText(/abba|cnt\[now\]/);
+    await expect(page.locator('#forms')).toContainText('고정 길이 K');
+    await expect(page.locator('#forms')).toContainText('조건을 만족하는 최장');
+    await expect(page.locator('#forms')).toContainText('기준 합 이상 최단');
+    await expect(page.locator('#template > .code-block')).toHaveCount(1);
+    await expect(page.locator('#template [data-variant]')).toHaveCount(2);
+    await expect(page.locator('#trace .small-example')).toHaveCount(2);
+    await expect(page.locator('[data-variant="sliding-min-sum"]')).toContainText('while 안에서 길이를 먼저 기록');
+    await expect(page.locator('#steps')).toContainText('while 종료 후');
+    await page.goto('/topics/dp');
+    await expect(page.locator('#concept')).not.toContainText(/1·2칸|dp\[0\] = 1/);
+    await expect(page.locator('#forms')).toContainText('최소 비용');
+    await expect(page.locator('[data-variant="dp-min-coins"]')).toContainText('나머지 INF');
+    await expect(page.locator('#trace [data-example="dp-min-coins"]')).toContainText('dp[4] = 2');
+    await page.goto('/topics/greedy');
+    await expect(page.locator('#concept')).not.toContainText('회의');
+    await expect(page.locator('#template')).toContainText('회의');
+    await page.goto('/topics/floyd');
+    await expect(page.locator('[data-variant="floyd-reachability"]')).toContainText('대각선 1');
 });

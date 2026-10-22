@@ -12,6 +12,7 @@ const repository = JSON.parse(await readFile(path.join(root,'data/repository.jso
 const ids = new Set(catalog.map(t=>t.id));
 assert.equal(ids.size,45);
 assert.equal((await readdir(path.join(root,'templates'))).filter(p=>p.endsWith('.cpp')).length,45);
+const usedVariants = new Set();
 for (const item of catalog) {
     const data = JSON.parse(await readFile(path.join(root,`src/content/topics/${item.id}.json`),'utf8'));
     assert.equal(data.id,item.id);
@@ -21,6 +22,23 @@ for (const item of catalog) {
     assert.ok(data.trace.rows.length>=3 && data.trace.rows.every(row=>row.length===3));
     const code = await readFile(path.join(root,`templates/${item.id}.cpp`),'utf8');
     const lesson = data.lesson;
+    const overview = data.overview;
+    assert.ok(overview && ['purpose','state','saving','templateTitle','templateScope'].every(key => typeof overview[key] === 'string' && overview[key].trim()), `${item.id}: general principles and scoped template`);
+    assert.ok(overview.signals.length >= 2 && overview.limits.length >= 1, `${item.id}: applicability`);
+    assert.ok(overview.forms.length >= 2 && overview.forms.every(row => row.length === 3), `${item.id}: representative forms`);
+    assert.ok(overview.variations.length >= 2 && overview.variations.every(row => row.length === 3), `${item.id}: variation changes`);
+    for (const related of overview.related) assert.ok(ids.has(related), `${item.id}: related template link`);
+    for (const extra of overview.extraTemplates) {
+        assert.ok(/^[a-z0-9-]+$/.test(extra.file) && !usedVariants.has(extra.file), `${item.id}: unique variant source`);
+        usedVariants.add(extra.file);
+        for (const key of ['title','scope','range','entry','invariant','complexity']) assert.ok(typeof extra[key] === 'string' && extra[key].trim(), `${extra.file}: ${key}`);
+        assert.ok(extra.variables.length >= 2 && extra.order.length >= 3 && extra.mistakes.length, `${extra.file}: execution explanation`);
+        assert.ok(extra.example.input && extra.example.result && extra.example.rows.length >= 3 && extra.example.rows.every(row => row.length === 3), `${extra.file}: complete small trace`);
+        const source = await readFile(path.join(root,`templates/variants/${extra.file}.cpp`),'utf8');
+        assert.ok(source.includes('using namespace std;') && !/TODO|\bclass\b|bits\/stdc|size_t|unsigned|static_cast|numeric_limits/.test(source), `${extra.file}: concrete personal-style code`);
+        for (const line of source.split('\n')) if (line.trim()) assert.ok(!line.includes('\t') && (line.length - line.trimStart().length) % 4 === 0, `${extra.file}: indentation`);
+    }
+
     assert.ok(lesson && ['problem','idea','entry','range','traceEnd'].every(field => typeof lesson[field] === 'string' && lesson[field].trim()), `${item.id}: required explanations`);
     assert.ok(!/(?<!아)니다|세요|원소 반영|조건 복구|해당 시점|이제 살펴보|중요한 점은/.test(JSON.stringify(data)), `${item.id}: concrete notebook tone`);
     assert.ok(lesson.variables.length >= 2 && lesson.boundaries.length && lesson.traceEnd.trim(), `${item.id}: details`);
@@ -54,6 +72,7 @@ for (const item of catalog) {
     assert.ok(!/bits\/stdc|class\s/.test(code));
     assert.ok(!/추후 추가|준비 중|TODO|lorem ipsum/i.test(JSON.stringify(data)));
 }
+assert.deepEqual([...usedVariants].sort(), (await readdir(path.join(root,'templates/variants'))).filter(file => file.endsWith('.cpp')).map(file => file.slice(0,-4)).sort(), 'Every concrete variant must be documented');
 for (const notes of [mistakeNotes,guides,quickNotes]) {
     assert.ok(!/(?<!아)니다|세요|원소 반영|조건 복구|해당 시점|이제 살펴보|중요한 점은/.test(JSON.stringify(notes)), 'Reference notebook tone');
     assert.equal(new Set(notes.map(x=>x.id)).size,notes.length);
@@ -79,3 +98,5 @@ assert.ok(!/study-theme|setTheme|localStorage|prefers-color-scheme|data-theme/.t
 console.log('설명 45개 · 원본 행 범위 · 시각화 12개 입력의 코드 해시·단계 연속성 · 밝은 화면 전용 확인');
 
 console.log('개인 C++ 컨벤션 · 주제별 입력 범위와 자료형 · 설명/추적 최신화 확인');
+
+console.log(`공통 개념·대표 형태·적용 범위 45개 · 독립 변형 템플릿 ${usedVariants.size}개 · 예제와 코드 연결 확인`);

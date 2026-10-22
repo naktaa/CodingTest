@@ -1,0 +1,297 @@
+{
+  "date": "2026-10-22",
+  "scope": "공통 개념부터 읽는 알고리즘 문서 개편",
+  "order": [
+    "공통 개념",
+    "대표 형태",
+    "기본 템플릿",
+    "작은 예제",
+    "변형과 실수",
+    "연결된 내 풀이"
+  ],
+  "topics": 45,
+  "baseTemplates": 45,
+  "additionalTemplates": 6,
+  "added": [
+    "sliding-fixed-sum",
+    "sliding-min-sum",
+    "binary-upper-bound",
+    "dfs-iterative",
+    "floyd-reachability",
+    "dp-min-coins"
+  ],
+  "contentChecks": [
+    "목적·저장 상태·줄이는 계산을 특정 예제와 분리",
+    "적용 조건·한계·대표 형태 비교를 먼저 제시",
+    "코드 앞에 해결 형태와 입력 범위 명시",
+    "변수·실행 순서·불변식을 해당 템플릿에 귀속",
+    "작은 예제·시각화를 코드 뒤에 배치",
+    "다른 형태의 조건·상태·갱신 위치를 비교"
+  ],
+  "preservation": {
+    "filesChecked": 265,
+    "changed": [],
+    "originalCpp": 213,
+    "baseTemplateCpp": 45,
+    "traceJson": 3,
+    "existingExecutables": 3,
+    "solutionData": 1
+  },
+  "checks": {
+    "content": "45 topics and 6 variant sources passed",
+    "cppWithHeadersAndUBSan": "51/51 passed",
+    "extraExamples": "6 observed traces matched actual C++",
+    "randomVariantComparisons": "passed",
+    "existingVisualizationInputs": 12,
+    "existingVisualizationSteps": 288,
+    "existingTraceDifferentialCases": 300,
+    "viteBuild": "passed",
+    "browserFull": "21/21 passed",
+    "finalReview": "3/3 passed",
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "screenshots": 13
+  },
+  "subjects": [
+    {
+      "id": "backtracking",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "bellman-ford",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "bfs",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "binary-search",
+      "forms": 3,
+      "variants": [
+        "binary-upper-bound"
+      ]
+    },
+    {
+      "id": "bitmask-dp",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "bits",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "bruteforce",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "complexity",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "compression",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "dfs",
+      "forms": 3,
+      "variants": [
+        "dfs-iterative"
+      ]
+    },
+    {
+      "id": "difference",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "dijkstra",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "dp",
+      "forms": 3,
+      "variants": [
+        "dp-min-coins"
+      ]
+    },
+    {
+      "id": "dsu",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "euler-tour",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "fenwick",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "floyd",
+      "forms": 3,
+      "variants": [
+        "floyd-reachability"
+      ]
+    },
+    {
+      "id": "frequency",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "greedy",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "heap-simulation",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "heap",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "implementation",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "interval-dp",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "intervals",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "knapsack",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "lca",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "lis",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "math",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "monotonic-deque",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "monotonic-stack",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "mst",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "multi-bfs",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "parametric",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "permutations",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "prefix",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "segment-tree",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "sliding-window",
+      "forms": 3,
+      "variants": [
+        "sliding-fixed-sum",
+        "sliding-min-sum"
+      ]
+    },
+    {
+      "id": "sorting",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "stack-queue",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "state-bfs",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "topological",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "tree-dp",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "tree",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "two-pointers",
+      "forms": 3,
+      "variants": []
+    },
+    {
+      "id": "zero-one-bfs",
+      "forms": 3,
+      "variants": []
+    }
+  ]
+}
