@@ -81,3 +81,23 @@ test('단계 버튼 키보드 조작과 모바일 줄 강조',async({page})=>{
     await expect(visual).toHaveAttribute('data-step','0');
     expect(await page.locator('html').evaluate(el=>el.scrollWidth<=innerWidth)).toBe(true);
 });
+
+test('설명 속 C++ 간격·단항 연산·템플릿·시각화 입력·수식 검색', async ({page}) => {
+    await page.goto('/topics/euler-tour');
+    await expect(page.locator('#conditions')).toContainText('1 <= N <= 200000');
+    await expect(page.locator('#steps')).toContainText('tin[now] = timer, order[timer] = now');
+    await expect(page.locator('#trace')).toContainText('tin[0] = 0, timer = 1');
+    await page.goto('/topics/bits');
+    await expect(page.locator('#steps')).toContainText('mask &= ~(1 << idx)');
+    await expect(page.locator('#steps')).toContainText('(mask & (1 << idx)) != 0');
+    await page.goto('/topics/heap');
+    await expect(page.locator('#steps')).toContainText('priority_queue<int, vector<int>, greater<int>>');
+    await page.goto('/topics/monotonic-deque#trace');
+    await expect(page.locator('.example-input')).toContainText('nums = [4, 2, 3, 1], K = 2');
+    await expect(page.getByLabel('시각화 입력').locator('option').first()).toHaveText('앞 만료와 뒤 제거: [4, 2, 3, 1], K = 2');
+    await expect(page.locator('.step-visualizer tbody')).toContainText('구간 시작 i - K + 1');
+    for (const query of ['tin[now]=timer', 'tin[now] = timer']) {
+        await page.goto(`/search?q=${encodeURIComponent(query)}`);
+        await expect(page.locator('.search-results a[href="/topics/euler-tour"]')).toBeVisible();
+    }
+});

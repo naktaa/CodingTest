@@ -2,7 +2,7 @@
   "id": "binary-search",
   "title": "이분탐색·lower/upper_bound",
   "group": "기본",
-  "summary": "첫 번째로 조건이 바뀌는 경계를 찾는다.",
+  "summary": "정렬된 배열에서 조건이 바뀌는 첫 위치 탐색.",
   "keywords": [
     "이분탐색",
     "lower_bound",
@@ -11,12 +11,12 @@
     "초과",
     "begin end prev"
   ],
-  "concept": "미확정 원소 구간 [left,right)을 절반씩 줄이기. nums[mid]<x면 mid까지 제외, 그 외에는 mid를 정답 경계로 남기기.",
+  "concept": "미확정 원소 구간 [left, right)을 절반씩 줄이기. nums[mid] < x면 mid까지 제외, 그 외에는 mid를 정답 경계로 남기기.",
   "conditions": [
-    "정렬되어 있거나 조건이 false에서 true로 한 번 바뀐다.",
-    "정렬되지 않은 배열에 lower_bound를 적용하면 올바른 결과를 보장할 수 없다."
+    "배열이 정렬돼 있거나 검사 결과가 false → true로 한 번만 변경.",
+    "정렬되지 않은 배열에는 lower_bound를 바로 적용할 수 없음. 필요하면 정렬 비용도 포함."
   ],
-  "optimize": "값을 선형으로 찾는 O(N) 탐색을, 중간값 비교로 절반씩 버려 O(log N)으로 줄인다. 단, 정렬 전처리 비용을 따로 센다.",
+  "optimize": "처음부터 찾으면 O(N). nums[mid]와 x를 비교해 답이 없는 절반을 제외하면 O(log N).",
   "steps": [
     "반열린 경계 초기화",
     "중간값 비교·절반 제외",
@@ -33,7 +33,7 @@
     ],
     [
       "left / right",
-      "미확정 구간 [left,right)의 양 끝. right는 N까지 허용."
+      "미확정 구간 [left, right)의 양 끝. right는 N까지 허용."
     ],
     [
       "mid",
@@ -41,12 +41,12 @@
     ],
     [
       "len",
-      "nums.size()를 저장한 int 길이. N<=200000이므로 int로 충분."
+      "nums.size()를 저장한 int 길이. N <= 200000이므로 int로 충분."
     ]
   ],
-  "invariant": "left 이전 원소는 모두 x 미만이고, right 이후 원소는 모두 x 이상이다. 각 단계는 이 사실을 유지하며 미확정 구간을 줄인다.",
+  "invariant": "left 이전은 모두 x 미만, right부터는 모두 x 이상. [left, right)만 미확정이며, 매 반복에서 이 구간이 줄어 경계가 만나면 첫 위치 결정.",
   "trace": {
-    "example": "nums=[1,2,2,5], x=2 → lower=1, upper=3, 개수 2.",
+    "example": "nums = [1, 2, 2, 5], x = 2 → lower = 1, upper = 3, 개수 2.",
     "headers": [
       "단계",
       "상태 / 계산",
@@ -54,53 +54,53 @@
     ],
     "rows": [
       [
-        "[0,4), mid=2",
-        "nums[2]=2",
-        "right=2"
+        "[0, 4), mid = 2",
+        "nums[2] = 2",
+        "right = 2"
       ],
       [
-        "[0,2), mid=1",
-        "nums[1]=2",
-        "right=1"
+        "[0, 2), mid = 1",
+        "nums[1] = 2",
+        "right = 1"
       ],
       [
-        "[0,1), mid=0",
-        "nums[0]=1",
-        "left=1"
+        "[0, 1), mid = 0",
+        "nums[0] = 1",
+        "left = 1"
       ],
       [
         "종료",
-        "left=right=1",
+        "left = right = 1",
         "첫 2의 위치"
       ]
     ]
   },
-  "complexity": "정렬된 vector에서 탐색 O(log N), 추가 공간 O(1). 정렬이 필요하면 O(N log N)을 더한다.",
+  "complexity": "정렬된 vector의 탐색 O(log N), 추가 공간 O(1). 정렬이 필요하면 O(N log N) 추가.",
   "mistakes": [
     [
-      "end를 역참조",
-      "x가 최대값보다 크면 end다. it!=nums.end()를 먼저 확인한다."
+      "end 위치를 역참조",
+      "[1, 2], x = 3이면 반환 위치는 N. 값에 접근하기 전에 it != nums.end() 또는 idx < N 검사."
     ],
     [
-      "prev(begin())",
-      "앞 원소가 없다. it!=begin()일 때만 prev(it)를 사용한다."
+      "prev(begin()) 호출",
+      "begin 앞에는 원소 없음. it != begin일 때만 prev(it) 사용."
     ],
     [
-      "중복 개수를 upper-lower+1",
-      "두 경계는 반열린 범위다. upper-lower가 개수다."
+      "중복 개수를 upper - lower + 1로 계산",
+      "두 경계는 반열린 범위의 시작·끝. 개수는 upper - lower이며 같은 경계면 0."
     ]
   ],
-  "comparison": "배열 원소의 위치는 이분탐색, 답 후보의 가능 여부를 검사하며 경계를 찾으면 파라메트릭 서치다.",
+  "comparison": "배열에서 값의 위치는 이분탐색. 답 후보를 정하고 가능한지 검사해 경계를 찾으면 파라메트릭 서치.",
   "lesson": {
     "problem": "정렬된 nums에서 x 이상인 첫 위치 찾기. 중복 값의 첫 위치나 값이 없을 때 삽입 위치가 필요하면 lower_bound 사용.",
-    "idea": "미확정 원소 구간 [left,right)을 절반씩 줄이기. nums[mid]<x면 mid까지 제외, 그 외에는 mid를 정답 경계로 남기기.",
+    "idea": "미확정 원소 구간 [left, right)을 절반씩 줄이기. nums[mid] < x면 mid까지 제외, 그 외에는 mid를 정답 경계로 남기기.",
     "entry": "nums를 오름차순으로 준비하고 lowerIndex(x) 호출. 반환값 len은 end 경계. 같은 값 개수는 upper_bound 위치에서 lower_bound 위치를 뺀 값.",
     "walkthrough": [
       {
         "to": 9,
         "title": "반열린 경계 초기화",
         "text": [
-          "int len=nums.size(),left=0,right=len. right는 제외 끝이므로 nums[len]을 읽는 의미가 아님. 빈 배열은 두 경계가 바로 같아 0 반환."
+          "int len = nums.size(), left = 0, right = len. right는 제외 끝이므로 nums[len]을 읽는 의미가 아님. 빈 배열은 두 경계가 바로 같아 0 반환."
         ],
         "from": 7
       },
@@ -108,8 +108,8 @@
         "to": 13,
         "title": "중간값 비교·절반 제외",
         "text": [
-          "left<right일 때 mid를 계산하므로 mid는 유효 인덱스. nums[mid]<x면 정렬상 그 앞도 모두 x 미만이므로 left=mid+1.",
-          "nums[mid]>=x면 mid가 첫 위치일 수 있어 right=mid. mid-1로 줄이면 답을 건너뛸 수 있음. 반대로 left=mid는 한 원소 구간에서 더 줄지 않아 무한 반복 가능."
+          "left < right일 때 mid를 계산하므로 mid는 유효 인덱스. nums[mid] < x면 정렬상 그 앞도 모두 x 미만이므로 left = mid + 1.",
+          "nums[mid] >= x면 mid가 첫 위치일 수 있어 right = mid. mid - 1로 줄이면 답을 건너뛸 수 있음. 반대로 left = mid는 한 원소 구간에서 더 줄지 않아 무한 반복 가능."
         ],
         "from": 10
       },
@@ -117,16 +117,16 @@
         "to": 15,
         "title": "만난 경계 반환",
         "text": [
-          "left 이전은 모두 x 미만,right부터는 모두 x 이상. 둘이 만나면 그 경계가 첫 위치. 반환값이 len일 수 있으므로 실제 값을 읽기 전 idx<len 검사."
+          "left 이전은 모두 x 미만, right부터는 모두 x 이상. 둘이 만나면 그 경계가 첫 위치. 반환값이 len일 수 있으므로 실제 값을 읽기 전 idx < len 검사."
         ],
         "from": 15
       }
     ],
     "boundaries": [
-      "빈 배열·모두 x 미만·모두 x 이상인 세 경계 확인. 정렬되지 않은 [2,1]에서는 절반을 버릴 근거가 없음.",
-      "mid=left+(right-left)/2로 계산해 left+right의 불필요한 큰 합 방지. end 반복자는 뺄셈에는 사용 가능하지만 역참조 금지."
+      "빈 배열·모두 x 미만·모두 x 이상인 세 경계 확인. 정렬되지 않은 [2, 1]에서는 절반을 버릴 근거가 없음.",
+      "mid = left + (right - left) / 2로 계산해 left + right의 불필요한 큰 합 방지. end 반복자는 뺄셈에는 사용 가능하지만 역참조 금지."
     ],
-    "traceEnd": "기본 입력 [1,2,2,5],x=2는 [0,4)→[0,2)→[0,1)→[1,1)로 종료. lower=1,표준 upper_bound 위치는 3이므로 2의 개수는 3-1=2.",
+    "traceEnd": "기본 입력 [1, 2, 2, 5], x = 2는 [0, 4) → [0, 2) → [0, 1) → [1, 1)로 종료. lower = 1, 표준 upper_bound 위치는 3이므로 2의 개수는 3 - 1 = 2.",
     "variables": [
       [
         "nums",
@@ -138,7 +138,7 @@
       ],
       [
         "left / right",
-        "미확정 구간 [left,right)의 양 끝. right는 N까지 허용."
+        "미확정 구간 [left, right)의 양 끝. right는 N까지 허용."
       ],
       [
         "mid",
@@ -146,9 +146,9 @@
       ],
       [
         "len",
-        "nums.size()를 저장한 int 길이. N<=200000이므로 int로 충분."
+        "nums.size()를 저장한 int 길이. N <= 200000이므로 int로 충분."
       ]
     ],
-    "range": "N<=200000, nums와 x의 절댓값<=10^9. 경계는 0~N이므로 len, left, right, mid 모두 int."
+    "range": "N <= 200000, nums와 x의 절댓값 <= 10^9. 경계는 0 ~ N이므로 len, left, right, mid 모두 int."
   }
 }

@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-22",
+  "scope": "설명 속 C++ 코드·수식 간격 통일",
+  "topics": 45,
+  "contentSpacingEdits": 978,
+  "sharedDisplayStringEdits": 76,
+  "mathSymbolSpacingEdits": 22,
+  "headingSpacingEdits": 2,
+  "examples": [
+    [
+      "1<=N<=200000",
+      "1 <= N <= 200000"
+    ],
+    [
+      "tin[now]=timer,order[timer]=now",
+      "tin[now] = timer, order[timer] = now"
+    ],
+    [
+      "fill(cnt,cnt+128,0)",
+      "fill(cnt, cnt + 128, 0)"
+    ],
+    [
+      "mask&=~(1<<idx)",
+      "mask &= ~(1 << idx)"
+    ]
+  ],
+  "preservedNotation": [
+    "timer++",
+    "cnt[next]--",
+    "-1",
+    "!dq.empty()",
+    "~(1 << idx)",
+    "it->second",
+    "node::operator<",
+    "vector<int>",
+    "2^N",
+    "0-1 BFS",
+    "0/1 배낭"
+  ],
+  "preservation": {
+    "filesChecked": 265,
+    "changed": [],
+    "textEditsOnlyWhitespace": true,
+    "originalCpp": 213,
+    "templates": 45,
+    "traceJson": 3,
+    "existingExecutables": 3,
+    "solutionData": 1
+  },
+  "visualInput": "실행 기록은 그대로 보존. 화면에서 nums = [4, 2, 3, 1], K = 2 형태로 표시.",
+  "checks": {
+    "content": "passed",
+    "cppWithStandaloneHeadersAndUBSan": "45/45 passed",
+    "traceInputs": 12,
+    "traceSteps": 288,
+    "differentialCases": 300,
+    "viteBuild": "passed",
+    "browser": "20/20 passed",
+    "compactAndSpacedFormulaSearch": "passed",
+    "finalArithmeticHeadings": "2 passed",
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "screenshots": 7
+  }
+}

@@ -21,7 +21,7 @@ export default function CodeBlock({ code, name = 'C++17 · 전체 템플릿', st
             clearTimeout(timer.current);
             timer.current = setTimeout(() => setCopied(false), 1800);
         } catch {
-            setCopyError('복사할 수 없습니다. 코드 텍스트를 선택해 복사해 주세요.');
+            setCopyError('자동 복사 실패. 코드 텍스트를 직접 선택해 복사.');
         }
     }
 
@@ -38,6 +38,6 @@ export default function CodeBlock({ code, name = 'C++17 · 전체 템플릿', st
             </div>}
             <pre tabIndex="0" aria-label={name}><code className="language-cpp" dangerouslySetInnerHTML={{ __html: html }}/></pre>
         </div>
-        <span className={copyError ? 'copy-error' : 'sr-only'} role="status">{copied ? '코드를 복사했습니다.' : copyError}</span>
+        <span className={copyError ? 'copy-error' : 'sr-only'} role="status">{copied ? '코드 복사 완료.' : copyError}</span>
     </div>;
 }

@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-22",
+  "scope": "남은 본문·표·요약·공통 안내 문체 교정",
+  "topicsReviewed": 45,
+  "changedFields": {
+    "summary": 44,
+    "conditions": 45,
+    "optimize": 45,
+    "invariant": 45,
+    "complexity": 45,
+    "mistakes": 44,
+    "comparison": 45
+  },
+  "mistakeNotesReviewed": 11,
+  "guidesReviewed": 6,
+  "quickNotesReviewed": 4,
+  "details": [
+    "기존 실행 순서 설명은 유지하고 요약·선택 조건·최적화·정당성·복잡도·오답·선택 기준을 별도 교정.",
+    "추적표의 추상적인 복구 표현을 실제 pop 동작으로 변경. 예제 값은 유지.",
+    "누적합 정당성과 오답 설명을 코드의 [left,right) 정의로 통일.",
+    "공통 표·짧은 소제목·검색·빈 결과·복사 안내·출처 설명에 같은 문체 적용."
+  ],
+  "preservation": {
+    "checkedFiles": 264,
+    "originalCpp": 213,
+    "templates": 45,
+    "traceJson": 3,
+    "existingExecutables": 3,
+    "changed": [],
+    "solutionFactsAndCode": {
+      "count": 211,
+      "unchangedExceptExplanatoryNotes": true
+    }
+  },
+  "checks": {
+    "content": "passed",
+    "catalogSummaries": "45 matched",
+    "cppWithStandaloneHeadersAndUBSan": "45/45 passed",
+    "traceInputs": 12,
+    "traceSteps": 288,
+    "differentialCases": 300,
+    "build": "passed",
+    "browserFull": "19/19 passed",
+    "afterShorterHeadings": "5/5 passed",
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "newScreenshots": 8
+  },
+  "screenshots": [
+    "prefix-mistakes",
+    "mobile-prefix-mistakes",
+    "mobile-lca-mistakes",
+    "mistakes-order",
+    "mobile-vector-reset",
+    "guide",
+    "mobile-guide",
+    "search-notes"
+  ]
+}

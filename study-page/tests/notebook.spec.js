@@ -53,13 +53,13 @@ test('문제 표현과 문제 번호 검색', async ({page}) => {
 
 test('빈 검색·결과 없음·Ctrl K', async ({page}) => {
     await page.goto('/search');
-    await expect(page.locator('.search-summary')).toContainText('입력하세요');
+    await expect(page.locator('.search-summary')).toContainText('문제 표현으로 검색');
     await page.keyboard.press('Control+k');
     await expect(page.getByRole('textbox',{name:'알고리즘, 문제, 표현 검색'})).toBeFocused();
     await page.keyboard.type('zzzz-no-match-999');
-    await expect(page.locator('.empty-state')).toContainText('찾지 못했습니다');
+    await expect(page.locator('.empty-state')).toContainText('일치하는 노트 없음');
     await page.getByRole('button',{name:'검색어 지우기'}).click();
-    await expect(page.locator('.search-summary')).toContainText('입력하세요');
+    await expect(page.locator('.search-summary')).toContainText('문제 표현으로 검색');
 });
 
 test('새로고침·뒤로·앞으로·목차 주소', async ({page}) => {
@@ -96,7 +96,7 @@ test('복사한 템플릿이 원본과 동일', async ({page,context}) => {
     await page.goto('/topics/segment-tree');
     await page.getByRole('button',{name:'C++17 · 전체 템플릿 코드 복사'}).click();
     expect(await page.evaluate(()=>navigator.clipboard.readText())).toBe(await template('segment-tree'));
-    await expect(page.locator('#template [role=status]')).toContainText('복사했습니다');
+    await expect(page.locator('#template [role=status]')).toContainText('복사 완료');
 });
 
 test('원본 풀이의 코드·링크·난이도', async ({page}) => {
@@ -165,7 +165,7 @@ test('모바일 320px·태블릿·데스크톱과 잘못된 주소', async ({pag
         }
     }
     await page.goto('/topics/does-not-exist');
-    await expect(page.locator('h1')).toHaveText('문서를 찾을 수 없습니다');
+    await expect(page.locator('h1')).toHaveText('문서 없음');
 });
 
 test('키보드 본문 건너뛰기', async ({page}) => {

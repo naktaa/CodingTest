@@ -15,6 +15,7 @@ assert.equal((await readdir(path.join(root,'templates'))).filter(p=>p.endsWith('
 for (const item of catalog) {
     const data = JSON.parse(await readFile(path.join(root,`src/content/topics/${item.id}.json`),'utf8'));
     assert.equal(data.id,item.id);
+    assert.equal(data.summary,item.summary, `${item.id}: catalog summary must match topic`);
     for (const field of ['title','summary','concept','conditions','optimize','steps','variables','invariant','trace','complexity','mistakes','comparison']) assert.ok(data[field]?.length || typeof data[field]==='object', `${item.id}: ${field}`);
     assert.ok(data.conditions.length>=2 && data.steps.length>=3 && data.mistakes.length>=2);
     assert.ok(data.trace.rows.length>=3 && data.trace.rows.every(row=>row.length===3));
@@ -64,6 +65,7 @@ for (const s of solutions) {
     assert.equal(s.code, original, `Source mismatch: ${s.path}`);
     assert.equal(createHash('sha256').update(s.code).digest('hex'), s.codeHash);
     assert.ok(s.topics.length && s.topics.every(id=>ids.has(id)), `Missing topic: ${s.path}`);
+    assert.ok(!/(?<!아)니다|세요/.test([s.verificationNote, s.fileNote].filter(Boolean).join(' ')), `Source-note tone: ${s.path}`);
     if (s.difficulty) assert.ok(s.sourceUrl && s.verifiedAt && s.difficultySource);
     if (s.url) assert.ok(s.verified,`Unverified link: ${s.path}`);
 }
@@ -71,6 +73,8 @@ console.log(`콘텐츠 ${catalog.length}개 · 실수 노트 ${mistakeNotes.leng
 
 const app = await readFile(path.join(root,'src/main.jsx'),'utf8');
 const css = await readFile(path.join(root,'src/style.css'),'utf8');
+const copyUi = await readFile(path.join(root,'src/components/CodeBlock.jsx'),'utf8');
+assert.ok(!/(?<!아)니다|세요/.test(app + copyUi), 'Shared UI notebook tone');
 assert.ok(!/study-theme|setTheme|localStorage|prefers-color-scheme|data-theme/.test(app + css), 'Light-only UI must not contain theme settings');
 console.log('설명 45개 · 원본 행 범위 · 시각화 12개 입력의 코드 해시·단계 연속성 · 밝은 화면 전용 확인');
 
