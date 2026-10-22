@@ -1,15 +1,16 @@
 #include <vector>
 using namespace std;
+using ll = long long;
 
-int n;
-vector<long long> dp;
+int N;
+vector<ll> dp;
 
-long long countWays() { // 0 <= n <= 90
-    dp.assign(n + 1, 0);
+ll countWays() { // 0 <= N <= 90
+    dp.assign(N + 1, 0);
     dp[0] = 1;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= N; i++) {
         dp[i] = dp[i - 1];
         if (i >= 2) dp[i] += dp[i - 2];
     }
-    return dp[n];
+    return dp[N];
 }

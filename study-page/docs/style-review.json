@@ -1,0 +1,276 @@
+{
+  "reviewedAt": "2026-10-22",
+  "references": [
+    {
+      "path": "LeetCode/누적합/1094_Car Pooling.cpp",
+      "commit": "3d8d475",
+      "sha256": "addfe2d7e6d6c6df7428929073f4a9d21e831d87306cef3ba7f47947c04a5397"
+    },
+    {
+      "path": "LeetCode/단조스택+큐/239_Sliding Window Maximum.cpp",
+      "commit": "c95fb41",
+      "sha256": "6981bece5c2d2199cf83906d947be255fbad6cc3a4225756359e4739f8c49a95"
+    },
+    {
+      "path": "LeetCode/단조스택+큐/739_Daily Temperatures.cpp",
+      "commit": "313ef2d",
+      "sha256": "2230a532bb8c40f5a21e11ec458820b71eda045e5e258eea24167d9dee7abfcd"
+    },
+    {
+      "path": "LeetCode/단조스택+큐/84_Largest Rectangle in Histogram.cpp",
+      "commit": "333c459",
+      "sha256": "da1da1c55e4eaa291297c687193f3930478219decff438e90b6d7def951f5b54"
+    },
+    {
+      "path": "Programmers/힙/더맵게.cpp",
+      "commit": "3eb5942",
+      "sha256": "40a114c77a66f6d389a4e19b9e0022c29bff404737cce3b052b6a047d7fa668f"
+    }
+  ],
+  "originalFilesPreserved": 213,
+  "cpp": {
+    "passed": 45,
+    "standaloneHeaders": 45,
+    "undefinedBehaviorSanitizer": true
+  },
+  "replay": {
+    "examples": 12,
+    "steps": 288,
+    "differentialCases": 300
+  },
+  "browser": {
+    "startTime": "2026-10-22T02:19:11.856Z",
+    "duration": 83046.463,
+    "expected": 19,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "topics": [
+    {
+      "id": "backtracking",
+      "range": "0<=M<=N<=20. 선택 인덱스와 길이는 int이며, 결과 개수가 큰 경우의 저장 비용은 별도로 고려합니다.",
+      "sourceHash": "9cdeacc4b1f675f015a26c70c219af5f774df5594788528f906c5b1f005a4c9d"
+    },
+    {
+      "id": "bellman-ford",
+      "range": "1<=N<=500, 간선<=5000, 가중치 절댓값<=10^9. 필드는 int, 거리 계산은 ll입니다. 음수 사이클이 있어도 N회 전체 완화의 변화량<=2.5×10^15로 INF=10^18 및 ll 범위와 구분됩니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "1d642afb6a76b7e37752344938c352327c58e0d3417569cf6f2e348ac0dc5b23"
+    },
+    {
+      "id": "bfs",
+      "range": "정점·간선 수<=200000, 이동 비용은 모두 1. 거리는 최대 N-1이므로 int이고 -1이 미방문입니다.",
+      "sourceHash": "b90cbb281bc54330fb9521582837047e5e9055b61369fcaf2b1baab49a59d4b5"
+    },
+    {
+      "id": "binary-search",
+      "range": "N<=200000, nums와 x의 절댓값<=10^9. 경계는 0~N이므로 int len,left,right,mid를 사용합니다.",
+      "sourceHash": "5cda2ff1586fb293ac7d2ad3ba7439b112b4484fd028fae866451945cc7edc88"
+    },
+    {
+      "id": "bitmask-dp",
+      "range": "N<=20인 정방 비용 행렬, 비용 절댓값<=10^9. mask·작업 번호는 int, 합<=2×10^10인 dp는 ll, INF=10^18입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "f8895d506abb792ea91fbb58a46b843edaf761f5d85f1df687aaf36df0caf7df"
+    },
+    {
+      "id": "bits",
+      "range": "N<=20, 원소 번호 0~N-1. int mask와 1<<idx를 사용하며 최대 집합은 1048575입니다.",
+      "sourceHash": "178d7d96aca89263f4de0c0b64534c6fc97f38eded96cae0c849378a24e29a84"
+    },
+    {
+      "id": "bruteforce",
+      "range": "N<=20, 원소 절댓값<=10^9. mask·정답 개수(최대 2^20)는 int, 합과 target(절댓값<=2×10^10)은 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "c39f3e8aab5c59af85bc84136a34d910e7de6428dc6cae8afc9f0235ff4b7826"
+    },
+    {
+      "id": "complexity",
+      "range": "0<=N<=200000. N(N-1)/2는 최대 19999900000이라 cnt와 반환값은 ll, 인덱스는 int입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "60c1893e35eb99752746211611dfa9acbf1440ab8eb9f0a208ac07c095ed3f19"
+    },
+    {
+      "id": "compression",
+      "range": "N<=200000, 좌표 절댓값<=10^9. nums와 coords는 int이며 압축 인덱스도 int입니다. 좌표 차이를 실제 거리로 계산하지 않습니다.",
+      "sourceHash": "02289828b31ea98ec98a37ee60f887e645bd17154558974885e35b7f7647d0df"
+    },
+    {
+      "id": "dfs",
+      "range": "정점·간선 수<=200000. 정점 번호·방문·길이는 int입니다. 긴 경로에서 재귀 스택 한계는 별도로 확인합니다.",
+      "sourceHash": "1b622a2cd869f81f914fced7acb420db2f31485816220fd2e4ffa72ed2eab5e7"
+    },
+    {
+      "id": "difference",
+      "range": "N<=200000, 구간 추가<=200000회, 각 변화량의 절댓값<=10^9. diff와 누적 now,ans는 최대 2×10^14를 담아 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "ed006ee52f20c3f73f7ba5dcb68696891b31427120a772a03b0d6fc403818e44"
+    },
+    {
+      "id": "dijkstra",
+      "range": "정점·간선 수<=200000, 가중치 0~10^9. 정점·가중치는 int, 단순 최단 경로<=199999×10^9라 ll입니다. INF=10^18은 유효 거리와 완화 후보보다 큽니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "43a24351c514635b7f77bd2a37fc9763fa978c0bd8f9aa6c8717ac8056e6e0b2"
+    },
+    {
+      "id": "dp",
+      "range": "0<=N<=90. 방법 수의 최대 4660046610375530309는 ll에 들어갑니다. 목표 칸과 인덱스는 int입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "4f658f352f387888f34f7bdf86d475415fc8cea0997f6c8532921ddf54d4ed7b"
+    },
+    {
+      "id": "dsu",
+      "range": "N<=200000. 대표·집합 크기·인덱스는 int입니다. 합치기만 지원합니다.",
+      "sourceHash": "c952d05fcf5f3dbab496d5f1066603145fb234415ab38c2194591e67effdf2ec"
+    },
+    {
+      "id": "euler-tour",
+      "range": "1<=N<=200000의 연결 트리. timer,tin,tout,order는 모두 0~N 범위라 int입니다.",
+      "sourceHash": "0c5062e7e99984b52991c2af59561bb4b1f007ef8f773afb41452b71951aae07"
+    },
+    {
+      "id": "fenwick",
+      "range": "N<=200000, 실행 중 모든 변화량의 절댓값 합<=10^15. 인덱스는 int, delta·저장 합·질의 결과는 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "9b0c9564cadb22a2f52079799de747f3776b4fec67df18683c02f14d48d3de2b"
+    },
+    {
+      "id": "floyd",
+      "range": "N<=500, 가중치 절댓값<=10^9, 음수 사이클이 없는 입력입니다. 끝점·가중치는 int, 거리와 합은 ll입니다. 유효 경로<=499×10^9이고 INF=10^18은 별도 표식입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "ebc1a2cacbee30e45364fe6b28681591b3bb7e355110dfc8f8f96b60043bd15f"
+    },
+    {
+      "id": "frequency",
+      "range": "원소 수와 추가/삭제 횟수<=200000, 값의 절댓값<=10^9. 키와 빈도는 int입니다.",
+      "sourceHash": "eea66c4253a94a19565618d6f1c730666ef0033cebe7ae9b0d2eb4d925476f3c"
+    },
+    {
+      "id": "greedy",
+      "range": "회의 수<=200000, -10^9<=시작<종료<=10^9. 비교만 하므로 int, 초기 last=-1000000001도 int 범위입니다.",
+      "sourceHash": "4edeb3225443521043e6159099eb992b107fe299945a3fa79e5467d8ee458a6f"
+    },
+    {
+      "id": "heap-simulation",
+      "range": "작업 수<=200000, 도착 0~10^9, 처리 1~10^9. node 필드는 int, 누적 시각은 2.1×10^14 이하이므로 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "267f953d8eee17d5b7b94b1df29cbba37e5bb90e0bc562c58350e7aad4e99c2e"
+    },
+    {
+      "id": "heap",
+      "range": "원소 수<=200000, 값의 절댓값<=10^9. 원소와 인덱스는 int입니다.",
+      "sourceHash": "7c9c427cd1d988fc005a9b41c4ab8f9f82f9b19ee875362ca21e75baa63a1f4b"
+    },
+    {
+      "id": "implementation",
+      "range": "문자열 길이<=200000, ASCII 0~127. 길이·인덱스·묶음 수는 int입니다.",
+      "sourceHash": "c242ea9df8d64c67f34626bcab741457c450ed3f7fec8adc45bd40785b92b76d"
+    },
+    {
+      "id": "interval-dp",
+      "range": "N<=500, 파일 크기 0~10^9. 원소·인덱스는 int, 누적합·비용은 ll입니다. 합치는 횟수는 N-1회이고 총비용<=2.5×10^14라 INF=10^18보다 작습니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "70f5b7f40497deb3f064f0f880bc95dcbfc3f1e663b86d3bff792622e007b976"
+    },
+    {
+      "id": "intervals",
+      "range": "구간 수<=200000, 끝점 절댓값<=10^9, 시작<=끝인 닫힌 구간입니다. 끝점과 인덱스는 int입니다.",
+      "sourceHash": "ecc5ce5a354cc8881412386c48c265767ba78134d43ce6cd56ca9f0df44a79d3"
+    },
+    {
+      "id": "knapsack",
+      "range": "물건 수<=1000, 0<=capacity<=100000, 무게 1~100000, 가치 절댓값<=10^9. 무게·가치는 int, 최대 가치<=10^12를 담는 dp는 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "68dad87f847e0cded17e0db6cc6eba7f345e4b41a0d387e76d1041f8a341922a"
+    },
+    {
+      "id": "lca",
+      "range": "1<=N<=200000의 연결 트리. 깊이·정점·점프 지수는 int입니다. 필요한 최대 점프는 2^17, 표 크기 계산의 1<<LOG도 int 범위입니다.",
+      "sourceHash": "10c0d409bf1cbdeba4ce7fce22a7b3b818fd71a8bc8d74b22ca83f5159fb33bb"
+    },
+    {
+      "id": "lis",
+      "range": "N<=200000, 값 절댓값<=10^9. nums,tails 값과 반환 길이는 int입니다.",
+      "sourceHash": "a14df610407f36934298c9664a62d74815798f7083c352cf0bd084120415fc22"
+    },
+    {
+      "id": "math",
+      "range": "0<=a,b<=10^18. 입력과 나머지는 ll 범위이고 곱셈은 하지 않습니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "ff34e49cf6e7afcfe957a03ca636f2add96c61034769cbaf968269652e487ffa"
+    },
+    {
+      "id": "monotonic-deque",
+      "range": "N<=200000, 값 절댓값<=10^9. 유효한 K는 1~N이며 그 밖에는 빈 결과로 종료합니다. 모든 값·인덱스는 int입니다.",
+      "sourceHash": "e2b152f5451408e515d9043401ba6f803b3d87af93f3785667b2ea3d7890c086"
+    },
+    {
+      "id": "monotonic-stack",
+      "range": "N<=200000, 값 절댓값<=10^9. 인덱스·거리·값은 모두 int입니다.",
+      "sourceHash": "469a2d374604b55123659db702f277319b30b5d407bf4206ebd69c151d4c3fac"
+    },
+    {
+      "id": "mst",
+      "range": "1<=N<=200000, 간선<=200000, 가중치 절댓값<=10^9. 간선 필드는 int, N-1개 합인 ans는 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "95a6ec63770c8e4a0070935049e6de92e79a8ec0f4d66c3672b54c8a15e49f2e"
+    },
+    {
+      "id": "multi-bfs",
+      "range": "정점·간선·출발점 수<=200000. 최단 간선 수는 N-1 이하이므로 int입니다.",
+      "sourceHash": "7d4b77329f9db342ccf6fcec0c0a3703ce4688a0db126ead2a30d549881e5317"
+    },
+    {
+      "id": "parametric",
+      "range": "랜선 수<=200000, 길이 0~10^9, need 1~10^9. 길이·경계는 int, 합쳐 세는 조각 수 cnt만 최대 2×10^14라 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "eda307795979b98b437a8da82dfbfe6b4f5bd32ca3e8582803f683f77f61329f"
+    },
+    {
+      "id": "permutations",
+      "range": "N<=9, 값의 절댓값<=10^9. 값·인덱스는 int, 최대 9!개 결과를 복사해 저장합니다.",
+      "sourceHash": "cfea3986aba11f719b317bb12f57158b1a20189d10fcdaceed111da295d0c7d1"
+    },
+    {
+      "id": "prefix",
+      "range": "N<=200000, 각 값의 절댓값<=10^9. 개별 nums는 int, 최대 2×10^14인 누적합과 반환값은 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "4b423184220eabc4cf7f35068c4dfb5036384b051bec3d5fcfae3131de74c104"
+    },
+    {
+      "id": "segment-tree",
+      "range": "N<=200000, 원소·새 값의 절댓값<=10^9. nums와 대입 값은 int, tree 합·질의 결과는 최대 2×10^14라 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "67ec32c0de2f93baf617ee8439f451cc32a1ac6256aea54face5772e9ceb6e3d"
+    },
+    {
+      "id": "sliding-window",
+      "range": "문자열 길이<=200000, ASCII 코드 0~127. char와 int cnt[128]로 처리하며 길이·빈도·최장 길이는 int입니다.",
+      "sourceHash": "474a9df55ef8fda41169c5eb58959fcea9acd8b9b115265176cf0314750926b5"
+    },
+    {
+      "id": "sorting",
+      "range": "기록 수<=200000, 점수의 절댓값<=10^9. 합 없이 비교만 하므로 int입니다.",
+      "sourceHash": "2d498e94fe6b01c10346180826ddd10940e663beaca68b2b6056a6f830bacfcf"
+    },
+    {
+      "id": "stack-queue",
+      "range": "문자열 길이<=200000, 문자는 (와 )뿐입니다. 문자 상태는 char 스택입니다.",
+      "sourceHash": "60d47a7ef4e4c4d40b84d68f05aeb81196068c04929f5fc00cf7b315beddbd9f"
+    },
+    {
+      "id": "state-bfs",
+      "range": "1<=N,M<=1000, 값은 0 또는 1, 시작 칸은 0. 상태가 최대 2NM개라 이동 거리와 행·열·사용 여부는 int입니다.",
+      "sourceHash": "86ee0009c69b3e2e40d8f2b2437897b8c8d727c6fb2fe6ae1e604305896f61e7"
+    },
+    {
+      "id": "topological",
+      "range": "정점·간선 수<=200000. 진입 차수와 처리 수는 int입니다. 간선은 방향 의존 관계입니다.",
+      "sourceHash": "5abdfe8fda75e701d3fd5af0f9d246dc4ea3fdb5ffe84cd4f16ea367e4cfb64b"
+    },
+    {
+      "id": "tree-dp",
+      "range": "1<=N<=200000의 연결 트리, 가중치 절댓값<=10^9. 가중치는 int, 선택 가치 합은 최대 2×10^14라 dp와 반환값은 ll입니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "a9948363fb85a4745d8a8ced81adc52e3232dbe815e4a9e52b6098bf5266324a"
+    },
+    {
+      "id": "tree",
+      "range": "1<=N<=200000의 연결 트리. 부모·깊이·순서는 int입니다. 긴 체인의 재귀 깊이는 별도로 확인합니다.",
+      "sourceHash": "9c43df5eadac0292dec1ad881477ed532edd94b2d3bff0e8cb7cc850ba49e77f"
+    },
+    {
+      "id": "two-pointers",
+      "range": "N<=200000, 원소 절댓값<=2×10^9. 원소·인덱스는 int이며 합과 target은 절댓값 4×10^9까지 필요해 ll입니다. 1LL 승격은 유지합니다. ll은 using ll = long long;으로 선언합니다.",
+      "sourceHash": "acf36950ba50720227d5d61dcb15c69728adba1b7751284c7a446760573ec024"
+    },
+    {
+      "id": "zero-one-bfs",
+      "range": "정점·간선 수<=200000, 가중치는 0 또는 1. 최소 비용<=N-1이므로 int이고 INF=10^9와 구분됩니다.",
+      "sourceHash": "195b1670ccddf334f16c1791d63e6545949560de5d10c50c89011ac3cacab95d"
+    }
+  ]
+}

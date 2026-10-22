@@ -5,8 +5,9 @@ string s;
 int ans;
 
 int countGroups() {
+    int len = s.size();
     ans = 0;
-    for (int i = 0; i < static_cast<int>(s.size()); i++) {
+    for (int i = 0; i < len; i++) {
         if (i == 0 || s[i] != s[i - 1]) {
             ans++;
         }

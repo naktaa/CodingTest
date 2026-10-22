@@ -6,7 +6,8 @@ vector<vector<int>> edges;
 vector<int> dist;
 
 void bfs(int start) {
-    dist.assign(edges.size(), -1);
+    int len = edges.size();
+    dist.assign(len, -1);
     queue<int> q;
     dist[start] = 0;
     q.push(start);

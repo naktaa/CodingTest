@@ -1,13 +1,14 @@
-#include <cstddef>
+#include <iostream>
 using namespace std;
+using ll = long long;
 
-int n;
-long long cnt;
+int N;
+ll cnt;
 
-long long countPairs() {
+ll countPairs() {
     cnt = 0;
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
+    for (int i = 0; i < N; i++) {
+        for (int j = i + 1; j < N; j++) {
             cnt++;
         }
     }

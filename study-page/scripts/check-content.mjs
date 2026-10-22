@@ -19,6 +19,35 @@ for (const item of catalog) {
     assert.ok(data.conditions.length>=2 && data.steps.length>=3 && data.mistakes.length>=2);
     assert.ok(data.trace.rows.length>=3 && data.trace.rows.every(row=>row.length===3));
     const code = await readFile(path.join(root,`templates/${item.id}.cpp`),'utf8');
+    const lesson = data.lesson;
+    assert.ok(lesson && lesson.problem.length > 40 && lesson.idea.length > 35 && lesson.entry.length > 25, `${item.id}: prose`);
+    assert.ok(lesson.variables.length >= 2 && lesson.boundaries.length && lesson.traceEnd.length > 30, `${item.id}: details`);
+    assert.ok(lesson.walkthrough.length >= 3, `${item.id}: walkthrough`);
+    const lineCount = code.trimEnd().split('\n').length;
+    for (const part of lesson.walkthrough) {
+        assert.ok(Number.isInteger(part.from) && part.from >= 1 && part.to >= part.from && part.to <= lineCount, `${item.id}: source range`);
+        assert.ok(part.text.length && part.text.every(text => text.length > 45), `${item.id}: execution explanation`);
+    }
+    if (['sliding-window','monotonic-deque','binary-search'].includes(item.id)) {
+        const trace = JSON.parse(await readFile(path.join(root,`src/data/traces/${item.id}.json`),'utf8'));
+        assert.equal(trace.sourceHash, createHash('sha256').update(code).digest('hex'), `${item.id}: stale replay; regenerate traces`);
+        assert.equal(trace.cases.length,4);
+        for (const example of trace.cases) {
+            assert.ok(example.steps.length >= 2);
+            for (const [i, step] of example.steps.entries()) {
+                assert.ok(step.line >= 1 && step.line <= lineCount && code.split('\n')[step.line-1].trim(), `${item.id}: trace line`);
+                assert.deepEqual(step.before, i ? example.steps[i-1].after : null, `${item.id}: before/after continuity`);
+            }
+        }
+    } else assert.ok(lesson.diagram?.rows?.length || lesson.diagram?.nodes?.length, `${item.id}: static diagram`);
+    assert.ok(lesson.range?.length > 30, `${item.id}: bounds and numeric types`);
+    assert.ok(!/\b(?:size_t|unsigned|static_cast|numeric_limits)\b|1ULL|__builtin_popcount|auto\s*\[|auto&\s*\[/.test(code), `${item.id}: personal C++ convention`);
+    assert.ok(!/for\s*\([^;]*;[^;]*\.size\(\)/.test(code), `${item.id}: cache length as int`);
+    assert.ok(!code.replace('using ll = long long;', '').includes('long long'), `${item.id}: use ll alias`);
+    assert.ok(!/\barr\b/.test(code), `${item.id}: use nums`);
+    for (const line of code.split('\n')) if (line.trim()) assert.ok(!line.includes('\t') && (line.length-line.trimStart().length)%4===0, `${item.id}: four-space indent`);
+    if (/const (?:ll|int) INF/.test(code)) assert.ok(/const (?:ll|int) INF = [0-9'][0-9']*(?:LL)?;/.test(code), `${item.id}: explicit integer INF`);
+    assert.ok(!/static_cast|numeric_limits|1ULL|__builtin_popcount/.test(JSON.stringify(data)), `${item.id}: stale style explanation`);
     assert.ok(code.includes('using namespace std;'));
     assert.ok(!/bits\/stdc|class\s/.test(code));
     assert.ok(!/추후 추가|준비 중|TODO|lorem ipsum/i.test(JSON.stringify(data)));
@@ -37,3 +66,10 @@ for (const s of solutions) {
     if (s.url) assert.ok(s.verified,`Unverified link: ${s.path}`);
 }
 console.log(`콘텐츠 ${catalog.length}개 · 실수 노트 ${mistakeNotes.length}개 · 선택 가이드 ${guides.length}개 · 원본 일치 ${solutions.length}개 통과`);
+
+const app = await readFile(path.join(root,'src/main.jsx'),'utf8');
+const css = await readFile(path.join(root,'src/style.css'),'utf8');
+assert.ok(!/study-theme|setTheme|localStorage|prefers-color-scheme|data-theme/.test(app + css), 'Light-only UI must not contain theme settings');
+console.log('설명 45개 · 원본 행 범위 · 시각화 12개 입력의 코드 해시·단계 연속성 · 밝은 화면 전용 확인');
+
+console.log('개인 C++ 컨벤션 · 주제별 입력 범위와 자료형 · 설명/추적 최신화 확인');

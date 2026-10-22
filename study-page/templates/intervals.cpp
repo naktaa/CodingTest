@@ -6,12 +6,13 @@ using namespace std;
 vector<pair<int, int>> intervals, ans;
 
 void mergeIntervals() {
+    int len = intervals.size();
     ans.clear();
     if (intervals.empty()) return;
     sort(intervals.begin(), intervals.end());
     int left = intervals[0].first;
     int right = intervals[0].second;
-    for (int i = 1; i < static_cast<int>(intervals.size()); i++) {
+    for (int i = 1; i < len; i++) {
         if (intervals[i].first <= right) {
             right = max(right, intervals[i].second);
         }

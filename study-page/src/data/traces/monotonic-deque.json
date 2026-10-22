@@ -1,0 +1,2251 @@
+{
+  "topic": "monotonic-deque",
+  "sourceHash": "e2b152f5451408e515d9043401ba6f803b3d87af93f3785667b2ea3d7890c086",
+  "generator": "C++17 execution of instrumented canonical template",
+  "sourceLines": 19,
+  "cases": [
+    {
+      "id": "basic",
+      "label": "앞 만료와 뒤 제거: [4,2,3,1], K=2",
+      "input": {
+        "nums": [
+          4,
+          2,
+          3,
+          1
+        ],
+        "K": 2
+      },
+      "expected": [
+        4,
+        3,
+        3
+      ],
+      "steps": [
+        {
+          "line": 9,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 10,
+          "event": "reset",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 11,
+          "event": "validity",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 12,
+          "event": "deque-init",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0,
+              1
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0,
+              1
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              0,
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              0,
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              0,
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 15,
+          "event": "drop-back",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "answer",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2,
+              3
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "answer",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3
+            ],
+            "dq": [
+              2,
+              3
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3,
+              3
+            ],
+            "dq": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "line": 19,
+          "event": "return",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3,
+              3
+            ],
+            "dq": [
+              2,
+              3
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              3,
+              3
+            ],
+            "dq": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "same",
+      "label": "같은 값: [4,4,4], K=2",
+      "input": {
+        "nums": [
+          4,
+          4,
+          4
+        ],
+        "K": 2
+      },
+      "expected": [
+        4,
+        4
+      ],
+      "steps": [
+        {
+          "line": 9,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 10,
+          "event": "reset",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 11,
+          "event": "validity",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 12,
+          "event": "deque-init",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": -1,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 15,
+          "event": "drop-back",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 15,
+          "event": "drop-back",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "answer",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              4
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 19,
+          "event": "return",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              4
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              4,
+              4
+            ],
+            "dq": [
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "one",
+      "label": "윈도우 길이 1",
+      "input": {
+        "nums": [
+          2,
+          1,
+          3
+        ],
+        "K": 1
+      },
+      "expected": [
+        2,
+        1,
+        3
+      ],
+      "steps": [
+        {
+          "line": 9,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 10,
+          "event": "reset",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 11,
+          "event": "validity",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 12,
+          "event": "deque-init",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              0
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              0
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "answer",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 13,
+          "event": "visit",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              1
+            ]
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              1
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 14,
+          "event": "expire-check",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 15,
+          "event": "back-check",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": []
+          }
+        },
+        {
+          "line": 16,
+          "event": "push",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": []
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "window-check",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 17,
+          "event": "answer",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          }
+        },
+        {
+          "line": 19,
+          "event": "return",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": [
+              2,
+              1,
+              3
+            ],
+            "dq": [
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "invalid",
+      "label": "원소보다 큰 윈도우",
+      "input": {
+        "nums": [
+          2,
+          1
+        ],
+        "K": 3
+      },
+      "expected": [],
+      "steps": [
+        {
+          "line": 9,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 10,
+          "event": "reset",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        },
+        {
+          "line": 11,
+          "event": "validity",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": [],
+            "dq": []
+          }
+        }
+      ]
+    }
+  ]
+}

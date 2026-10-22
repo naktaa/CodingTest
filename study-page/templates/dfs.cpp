@@ -13,6 +13,7 @@ void dfs(int now) {
 }
 
 void runDfs(int start) {
-    visited.assign(edges.size(), 0);
+    int len = edges.size();
+    visited.assign(len, 0);
     dfs(start);
 }

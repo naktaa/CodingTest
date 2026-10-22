@@ -1,0 +1,3901 @@
+{
+  "topic": "sliding-window",
+  "sourceHash": "474a9df55ef8fda41169c5eb58959fcea9acd8b9b115265176cf0314750926b5",
+  "generator": "C++17 execution of instrumented canonical template",
+  "sourceLines": 25,
+  "cases": [
+    {
+      "id": "abba",
+      "label": "중복이 두 번 제거되는 abba",
+      "input": {
+        "s": "abba"
+      },
+      "expected": 2,
+      "steps": [
+        {
+          "line": 10,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 11,
+          "event": "reset",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 12,
+          "event": "left",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 13,
+          "event": "answer-init",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": 97,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": 97,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 98,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 98,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": 98,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": 98,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 2
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 2
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 2
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 2
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 2
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 2
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 2
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 2
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 2
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 2
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 2
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 2
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 98,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 2
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 98,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 2
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 98,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 98,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 2,
+            "cnt": {
+              "a": 0,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        },
+        {
+          "line": 24,
+          "event": "return",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "empty",
+      "label": "빈 문자열",
+      "input": {
+        "s": ""
+      },
+      "expected": 0,
+      "steps": [
+        {
+          "line": 10,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          }
+        },
+        {
+          "line": 11,
+          "event": "reset",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          }
+        },
+        {
+          "line": 12,
+          "event": "left",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          }
+        },
+        {
+          "line": 13,
+          "event": "answer-init",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          }
+        },
+        {
+          "line": 24,
+          "event": "return",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "same",
+      "label": "모두 같은 문자 aaaa",
+      "input": {
+        "s": "aaaa"
+      },
+      "expected": 1,
+      "steps": [
+        {
+          "line": 10,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          }
+        },
+        {
+          "line": 11,
+          "event": "reset",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          }
+        },
+        {
+          "line": 12,
+          "event": "left",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          }
+        },
+        {
+          "line": 13,
+          "event": "answer-init",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": 97,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": 97,
+            "ans": 0,
+            "cnt": {
+              "a": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 1,
+            "right": 2,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 2,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 2
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 2,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 3,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 3,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        },
+        {
+          "line": 24,
+          "event": "return",
+          "before": {
+            "left": 3,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repeat",
+      "label": "반복되는 abcabcbb",
+      "input": {
+        "s": "abcabcbb"
+      },
+      "expected": 3,
+      "steps": [
+        {
+          "line": 10,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 11,
+          "event": "reset",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 12,
+          "event": "left",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 13,
+          "event": "answer-init",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": 97,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": 97,
+            "ans": 0,
+            "cnt": {
+              "a": 0,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 0,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 98,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": 98,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 0,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 1,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": 99,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": 99,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 2,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 2,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 2,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 2,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 2,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 2,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 2,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 0,
+            "right": 3,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 1,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 1,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 1,
+            "right": 3,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 1,
+            "right": 4,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 2,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 2,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 2,
+            "right": 4,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 2
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 2
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 2
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 2
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 2
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 2
+            }
+          },
+          "after": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 2,
+            "right": 5,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 3,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 3,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 3,
+            "right": 5,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 1,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 3,
+            "right": 6,
+            "mid": -1,
+            "current": 97,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 4,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 4,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 4,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 4,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 4,
+            "right": 6,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 4,
+            "right": 6,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 4,
+            "right": 6,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 4,
+            "right": 6,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 5,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 5,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 14,
+          "event": "visit",
+          "before": {
+            "left": 5,
+            "right": 6,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 15,
+          "event": "character",
+          "before": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 16,
+          "event": "add",
+          "before": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 1
+            }
+          },
+          "after": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 5,
+            "right": 7,
+            "mid": -1,
+            "current": 99,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 6,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 6,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 6,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 18,
+          "event": "remove-target",
+          "before": {
+            "left": 6,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 6,
+            "right": 7,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 19,
+          "event": "remove",
+          "before": {
+            "left": 6,
+            "right": 7,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 2,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 6,
+            "right": 7,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 20,
+          "event": "advance-left",
+          "before": {
+            "left": 6,
+            "right": 7,
+            "mid": -1,
+            "current": 98,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 7,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 17,
+          "event": "condition",
+          "before": {
+            "left": 7,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 7,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 22,
+          "event": "answer",
+          "before": {
+            "left": 7,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 7,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          }
+        },
+        {
+          "line": 24,
+          "event": "return",
+          "before": {
+            "left": 7,
+            "right": 7,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          },
+          "after": {
+            "left": 7,
+            "right": 8,
+            "mid": -1,
+            "current": -1,
+            "ans": 3,
+            "cnt": {
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

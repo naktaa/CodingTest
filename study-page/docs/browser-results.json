@@ -1,12 +1,12 @@
 {
   "config": {
     "argv": [
-      "/tmp/node-v22.23.4-linux-x64/bin/node",
-      "/mnt/e/CodingTest/study-page/node_modules/.bin/playwright",
+      "/tmp/study-page-revision-tools/node-v22.23.4-linux-x64/bin/node",
+      "/tmp/study-page-revision-qa/CodingTest/study-page/node_modules/.bin/playwright",
       "test"
     ],
-    "configFile": "/mnt/e/CodingTest/study-page/playwright.config.js",
-    "rootDir": "/mnt/e/CodingTest/study-page/tests",
+    "configFile": "/tmp/study-page-revision-qa/CodingTest/study-page/playwright.config.js",
+    "rootDir": "/tmp/study-page-revision-qa/CodingTest/study-page/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": false,
@@ -22,7 +22,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/mnt/e/CodingTest/study-page/test-results",
+        "outputDir": "/tmp/study-page-revision-qa/CodingTest/study-page/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -30,7 +30,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "/mnt/e/CodingTest/study-page/tests",
+        "testDir": "/tmp/study-page-revision-qa/CodingTest/study-page/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -42,20 +42,20 @@
       {
         "grep": {},
         "grepInvert": null,
-        "outputDir": "/mnt/e/CodingTest/study-page/test-results",
+        "outputDir": "/tmp/study-page-revision-qa/CodingTest/study-page/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
         "name": "",
-        "testDir": "/mnt/e/CodingTest/study-page/tests",
-        "snapshotDir": "/mnt/e/CodingTest/study-page/tests",
+        "testDir": "/tmp/study-page-revision-qa/CodingTest/study-page/tests",
+        "snapshotDir": "/tmp/study-page-revision-qa/CodingTest/study-page/tests",
         "testIgnore": [],
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 30000,
         "use": {
-          "baseURL": "http://127.0.0.1:4173",
+          "baseURL": "http://127.0.0.1:5180",
           "viewport": {
             "width": 1440,
             "height": 1000
@@ -121,12 +121,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1830,
+                  "duration": 698,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:07.307Z",
+                  "startTime": "2026-10-22T02:19:12.512Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -155,12 +155,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 34075,
+                  "duration": 16998,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:09.513Z",
+                  "startTime": "2026-10-22T02:19:13.967Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -189,12 +189,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1458,
+                  "duration": 675,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:44.336Z",
+                  "startTime": "2026-10-22T02:19:29.299Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -204,7 +204,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-14c6c1e8eacd9cc24433",
           "file": "notebook.spec.js",
-          "line": 34,
+          "line": 41,
           "column": 1
         },
         {
@@ -223,12 +223,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1142,
+                  "duration": 636,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:45.827Z",
+                  "startTime": "2026-10-22T02:19:29.991Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -238,7 +238,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-8910bcc6e40247f7e1be",
           "file": "notebook.spec.js",
-          "line": 47,
+          "line": 54,
           "column": 1
         },
         {
@@ -257,12 +257,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3044,
+                  "duration": 1270,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:46.988Z",
+                  "startTime": "2026-10-22T02:19:30.642Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -272,11 +272,11 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-d44adcff46f95e229794",
           "file": "notebook.spec.js",
-          "line": 58,
+          "line": 65,
           "column": 1
         },
         {
-          "title": "테마 저장·복원과 저장 불가 환경",
+          "title": "운영체제의 어두운 설정과 이전 저장값에도 흰 화면",
           "ok": true,
           "tags": [],
           "tests": [
@@ -291,12 +291,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2522,
+                  "duration": 930,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:50.049Z",
+                  "startTime": "2026-10-22T02:19:31.926Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -304,9 +304,9 @@
               "status": "expected"
             }
           ],
-          "id": "12d9203b6a7e4bd3f9fb-f53b2eee9cef6239a08c",
+          "id": "12d9203b6a7e4bd3f9fb-6d4ad6f3d04b8bbe4514",
           "file": "notebook.spec.js",
-          "line": 74,
+          "line": 81,
           "column": 1
         },
         {
@@ -325,12 +325,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1344,
+                  "duration": 531,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:52.616Z",
+                  "startTime": "2026-10-22T02:19:32.874Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -340,7 +340,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-60df10dbd2df2fecd39a",
           "file": "notebook.spec.js",
-          "line": 87,
+          "line": 94,
           "column": 1
         },
         {
@@ -359,12 +359,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1277,
+                  "duration": 644,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:53.999Z",
+                  "startTime": "2026-10-22T02:19:33.422Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -374,7 +374,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-75f8cdf3cd58587b6eed",
           "file": "notebook.spec.js",
-          "line": 95,
+          "line": 102,
           "column": 1
         },
         {
@@ -393,12 +393,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1018,
+                  "duration": 614,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:55.296Z",
+                  "startTime": "2026-10-22T02:19:34.082Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -408,7 +408,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-539d8cfdf1b07634211b",
           "file": "notebook.spec.js",
-          "line": 105,
+          "line": 112,
           "column": 1
         },
         {
@@ -427,12 +427,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1282,
+                  "duration": 771,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:56.334Z",
+                  "startTime": "2026-10-22T02:19:34.713Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -442,7 +442,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-3181186faaf92b451db8",
           "file": "notebook.spec.js",
-          "line": 115,
+          "line": 122,
           "column": 1
         },
         {
@@ -461,12 +461,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1654,
+                  "duration": 1744,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:57.636Z",
+                  "startTime": "2026-10-22T02:19:35.504Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -476,7 +476,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-743144ece487d3d81887",
           "file": "notebook.spec.js",
-          "line": 128,
+          "line": 135,
           "column": 1
         },
         {
@@ -495,12 +495,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10748,
+                  "duration": 3542,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:08:59.319Z",
+                  "startTime": "2026-10-22T02:19:37.260Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -510,7 +510,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-89dd3596c34458834c2c",
           "file": "notebook.spec.js",
-          "line": 150,
+          "line": 159,
           "column": 1
         },
         {
@@ -529,12 +529,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 681,
+                  "duration": 435,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:09:10.809Z",
+                  "startTime": "2026-10-22T02:19:40.818Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -544,7 +544,219 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-d82ff87e969fb473053c",
           "file": "notebook.spec.js",
-          "line": 162,
+          "line": 171,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "visualizations.spec.js",
+      "file": "visualizations.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "sliding-window: 모든 입력·실행 단계·줄 번호·경계·초기화",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21106,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T02:19:41.280Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-1e80624e981ab605135a",
+          "file": "visualizations.spec.js",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "monotonic-deque: 모든 입력·실행 단계·줄 번호·경계·초기화",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14031,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T02:20:00.774Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-0dd8fd15f9f7d4ee3a24",
+          "file": "visualizations.spec.js",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "binary-search: 모든 입력·실행 단계·줄 번호·경계·초기화",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7444,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T02:20:14.820Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-4776d0f3141dfa7324e3",
+          "file": "visualizations.spec.js",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "abba: if 한 번으로 복구되지 않는 순간과 복구 후 답 갱신",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1668,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T02:20:22.277Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-f2fef47e0591f1329ba2",
+          "file": "visualizations.spec.js",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "흰 본문·18px 설명·16px 코드와 표·전체 코드 펼침",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6880,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T02:20:21.997Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-6cfa5b50fd41bb84a398",
+          "file": "visualizations.spec.js",
+          "line": 55,
+          "column": 1
+        },
+        {
+          "title": "단계 버튼 키보드 조작과 모바일 줄 강조",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 569,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T02:20:28.891Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-b0d5bcb537151699e111",
+          "file": "visualizations.spec.js",
+          "line": 74,
           "column": 1
         }
       ]
@@ -552,9 +764,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-21T15:08:04.469Z",
-    "duration": 67325.67499999999,
-    "expected": 13,
+    "startTime": "2026-10-22T02:19:11.856Z",
+    "duration": 83046.463,
+    "expected": 19,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

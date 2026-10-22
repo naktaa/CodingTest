@@ -6,14 +6,14 @@ vector<vector<int>> edges;
 vector<int> indegree, ans;
 
 bool topologicalSort() {
-    int n = edges.size();
-    indegree.assign(n, 0);
+    int len = edges.size();
+    indegree.assign(len, 0);
     ans.clear();
     for (const auto& list : edges) {
         for (int next : list) indegree[next]++;
     }
     queue<int> q;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < len; i++) {
         if (indegree[i] == 0) q.push(i);
     }
     while (!q.empty()) {
@@ -25,5 +25,6 @@ bool topologicalSort() {
             if (indegree[next] == 0) q.push(next);
         }
     }
-    return static_cast<int>(ans.size()) == n;
+    int cnt = ans.size();
+    return cnt == len;
 }

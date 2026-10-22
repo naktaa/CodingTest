@@ -18,17 +18,17 @@
   "optimize": "질의마다 구간을 순회하면 O(NQ). 한 번의 누적으로 O(N) 전처리 후 각 구간을 O(1)에 답한다.",
   "steps": [
     "길이 N+1의 prefix를 0으로 assign한다.",
-    "prefix[i+1]=prefix[i]+arr[i]로 만든다.",
+    "prefix[i+1]=prefix[i]+nums[i]로 만든다.",
     "[left,right)에서 앞의 left개를 빼 준다. 닫힌 [l,r]이면 prefix[r+1]-prefix[l]다."
   ],
   "variables": [
     [
-      "arr",
+      "nums",
       "0-based 원본 배열"
     ],
     [
       "prefix[i]",
-      "arr[0..i-1]의 합"
+      "nums[0..i-1]의 합"
     ],
     [
       "left, right",
@@ -37,7 +37,7 @@
   ],
   "invariant": "i번째 원소 반영 뒤 prefix[i+1]은 앞의 i+1개 합이다. 두 접두사의 공통 부분을 빼면 원하는 구간만 남는다.",
   "trace": {
-    "example": "arr=[2,1,4], [1,3)의 합은 5.",
+    "example": "nums=[2,1,4], [1,3)의 합은 5.",
     "headers": [
       "단계",
       "상태 / 계산",
@@ -66,7 +66,7 @@
       ]
     ]
   },
-  "complexity": "전처리 O(N), 질의 O(1), 추가 공간 O(N). 합은 long long으로 저장한다.",
+  "complexity": "전처리 O(N), 질의 O(1), 추가 공간 O(N). 합은 ll으로 저장한다.",
   "mistakes": [
     [
       "prefix[right]-prefix[left-1]을 혼용",
@@ -77,5 +77,77 @@
       "뒤쪽 접두사들이 무효다. 동적 갱신은 펜윅이나 세그먼트 트리를 검토한다."
     ]
   ],
-  "comparison": "정적 구간 합은 누적합, 일괄 구간 덧셈은 차분, 온라인 점 갱신·구간 합은 펜윅, 다양한 결합 연산은 세그먼트 트리다."
+  "comparison": "정적 구간 합은 누적합, 일괄 구간 덧셈은 차분, 온라인 점 갱신·구간 합은 펜윅, 다양한 결합 연산은 세그먼트 트리다.",
+  "lesson": {
+    "problem": "배열이 바뀌지 않는 동안 여러 연속 구간의 합을 빠르게 구합니다. 질의마다 처음부터 더하는 일이 반복된다면 미리 접두사 합을 만듭니다.",
+    "idea": "prefix[i]를 앞의 i개 합으로 정의합니다. 반열린 구간 [left,right)의 합은 오른쪽 앞까지의 합에서 왼쪽 앞까지의 합을 빼면 됩니다.",
+    "entry": "nums를 채우고 buildPrefix()를 먼저 호출한 뒤 rangeSum(left,right)를 사용합니다. 배열 값이 바뀌면 누적합도 다시 만들어야 합니다.",
+    "walkthrough": [
+      {
+        "to": 10,
+        "title": "원소 수보다 한 칸 큰 배열을 만든다",
+        "text": [
+          "prefix[0]=0은 아무것도 더하지 않은 합입니다. N+1칸을 만들면 첫 구간과 마지막 구간도 같은 공식으로 계산할 수 있습니다."
+        ],
+        "from": 9
+      },
+      {
+        "to": 12,
+        "title": "이전 접두사에 현재 원소를 더한다",
+        "text": [
+          "i번째 원소를 반영한 합은 앞의 i+1개 합이므로 prefix[i+1]에 씁니다. prefix[i]를 이미 완성한 뒤 사용해야 하므로 i를 작은 쪽부터 진행합니다."
+        ],
+        "from": 11
+      },
+      {
+        "to": 17,
+        "title": "포함 끝과 제외 끝을 섞지 않는다",
+        "text": [
+          "[1,3)은 nums[1],nums[2]를 포함합니다. 예제의 prefix[3]-prefix[1]=7-2=5입니다. 닫힌 [l,r] 입력이라면 이 함수에는 (l,r+1)을 넘깁니다."
+        ],
+        "from": 16
+      }
+    ],
+    "boundaries": [
+      "0<=left<=right<=N을 전제로 합니다. [l,l)은 빈 구간으로 0입니다. 개별 nums가 int 범위여도 합은 넘칠 수 있어 prefix는 ll입니다."
+    ],
+    "traceEnd": "마지막 원소 4까지 반영하면 prefix=[0,2,3,7]입니다. rangeSum(1,3)은 prefix[3]-prefix[1]=7-2=5이며, 실제 nums[1]+nums[2]=1+4와 같습니다.",
+    "diagram": {
+      "caption": "prefix의 인덱스는 원소 번호가 아니라 앞에서부터의 원소 개수입니다.",
+      "rows": [
+        {
+          "label": "nums",
+          "values": [
+            2,
+            1,
+            4
+          ]
+        },
+        {
+          "label": "prefix",
+          "values": [
+            0,
+            2,
+            3,
+            7
+          ]
+        }
+      ]
+    },
+    "variables": [
+      [
+        "nums",
+        "0-based 원본 배열"
+      ],
+      [
+        "prefix[i]",
+        "nums[0..i-1]의 합"
+      ],
+      [
+        "left, right",
+        "포함 시작과 제외 끝"
+      ]
+    ],
+    "range": "N<=200000, 각 값의 절댓값<=10^9. 개별 nums는 int, 최대 2×10^14인 누적합과 반환값은 ll입니다. ll은 using ll = long long;으로 선언합니다."
+  }
 }

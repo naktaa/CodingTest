@@ -1,26 +1,27 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
+using ll = long long;
 
-vector<long long> lengths;
-long long need;
+vector<int> lengths; // 원소 수 <= 200000, 각 길이 0~10^9
+int need; // 1~10^9
 
-bool can(long long size) {
-    long long cnt = 0;
-    for (long long now : lengths) {
+bool can(int size) {
+    ll cnt = 0;
+    for (int now : lengths) {
         cnt += now / size;
         if (cnt >= need) return true;
     }
     return false;
 }
 
-long long maxLength() {
+int maxLength() {
     if (lengths.empty()) return 0;
-    long long left = 1;
-    long long right = *max_element(lengths.begin(), lengths.end());
-    long long ans = 0;
+    int left = 1;
+    int right = *max_element(lengths.begin(), lengths.end());
+    int ans = 0;
     while (left <= right) {
-        long long mid = left + (right - left) / 2;
+        int mid = left + (right - left) / 2;
         if (can(mid)) {
             ans = mid;
             left = mid + 1;

@@ -1,17 +1,18 @@
 #include <vector>
 using namespace std;
+using ll = long long;
 
-vector<int> arr;
-vector<long long> prefix;
+vector<int> nums;
+vector<ll> prefix;
 
 void buildPrefix() {
-    int n = arr.size();
-    prefix.assign(n + 1, 0);
-    for (int i = 0; i < n; i++) {
-        prefix[i + 1] = prefix[i] + arr[i];
+    int len = nums.size();
+    prefix.assign(len + 1, 0);
+    for (int i = 0; i < len; i++) {
+        prefix[i + 1] = prefix[i] + nums[i];
     }
 }
 
-long long rangeSum(int left, int right) {
+ll rangeSum(int left, int right) {
     return prefix[right] - prefix[left]; // [left, right)
 }

@@ -5,10 +5,10 @@ using namespace std;
 
 vector<int> parent, componentSize;
 
-void initDsu(int n) {
-    parent.resize(n);
+void initDsu(int N) {
+    parent.resize(N);
     iota(parent.begin(), parent.end(), 0);
-    componentSize.assign(n, 1);
+    componentSize.assign(N, 1);
 }
 
 int find(int now) {

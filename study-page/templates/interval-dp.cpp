@@ -1,28 +1,29 @@
 #include <algorithm>
-#include <limits>
 #include <vector>
 using namespace std;
+using ll = long long;
 
-vector<int> arr;
-vector<long long> prefix;
-vector<vector<long long>> dp;
+const ll INF = 1'000'000'000'000'000'000LL;
+vector<int> nums;
+vector<ll> prefix;
+vector<vector<ll>> dp;
 
-long long mergeCost() {
-    int n = arr.size();
-    if (n == 0) return 0;
-    prefix.assign(n + 1, 0);
-    for (int i = 0; i < n; i++) prefix[i + 1] = prefix[i] + arr[i];
-    dp.assign(n, vector<long long>(n, 0));
-    for (int len = 2; len <= n; len++) {
-        for (int left = 0; left + len <= n; left++) {
-            int right = left + len - 1;
-            dp[left][right] = numeric_limits<long long>::max() / 4;
+ll mergeCost() {
+    int len = nums.size();
+    if (len == 0) return 0;
+    prefix.assign(len + 1, 0);
+    for (int i = 0; i < len; i++) prefix[i + 1] = prefix[i] + nums[i];
+    dp.assign(len, vector<ll>(len, 0));
+    for (int width = 2; width <= len; width++) {
+        for (int left = 0; left + width <= len; left++) {
+            int right = left + width - 1;
+            dp[left][right] = INF;
             for (int k = left; k < right; k++) {
-                long long next = dp[left][k] + dp[k + 1][right];
+                ll next = dp[left][k] + dp[k + 1][right];
                 next += prefix[right + 1] - prefix[left];
                 dp[left][right] = min(dp[left][right], next);
             }
         }
     }
-    return dp[0][n - 1];
+    return dp[0][len - 1];
 }

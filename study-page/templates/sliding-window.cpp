@@ -1,21 +1,21 @@
 #include <algorithm>
 #include <string>
-#include <vector>
 using namespace std;
 
-string s;
-vector<int> cnt;
+string s; // ASCII 0~127
+int cnt[128];
 int ans;
 
 int longestUnique() {
-    cnt.assign(256, 0);
+    int len = s.size();
+    fill(cnt, cnt + 128, 0);
     int left = 0;
     ans = 0;
-    for (int right = 0; right < static_cast<int>(s.size()); right++) {
-        unsigned char now = s[right];
+    for (int right = 0; right < len; right++) {
+        char now = s[right];
         cnt[now]++;
         while (cnt[now] > 1) {
-            unsigned char next = s[left];
+            char next = s[left];
             cnt[next]--;
             left++;
         }

@@ -6,7 +6,8 @@ vector<vector<int>> edges;
 vector<int> starts, dist;
 
 void multiBfs() {
-    dist.assign(edges.size(), -1);
+    int len = edges.size();
+    dist.assign(len, -1);
     queue<int> q;
     for (int start : starts) {
         if (dist[start] != -1) continue;

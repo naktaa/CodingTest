@@ -2,14 +2,15 @@
 #include <vector>
 using namespace std;
 
-vector<int> arr, tails;
+vector<int> nums, tails;
 
 int lisLength() {
     tails.clear();
-    for (int now : arr) {
+    for (int now : nums) {
         auto it = lower_bound(tails.begin(), tails.end(), now);
         if (it == tails.end()) tails.push_back(now);
         else *it = now;
     }
-    return tails.size();
+    int len = tails.size();
+    return len;
 }

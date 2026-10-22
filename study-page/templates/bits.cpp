@@ -1,20 +1,20 @@
-#include <cstdint>
+#include <iostream>
 using namespace std;
 
-unsigned long long mask;
+int mask; // 원소 번호 0~19, N <= 20
 
 void initMask() {
     mask = 0;
 }
 
-void addValue(int idx) { // 0 <= idx < 64
-    mask |= (1ULL << idx);
+void addValue(int idx) { // 0 <= idx < 20
+    mask |= (1 << idx);
 }
 
 void removeValue(int idx) {
-    mask &= ~(1ULL << idx);
+    mask &= ~(1 << idx);
 }
 
 bool contains(int idx) {
-    return (mask & (1ULL << idx)) != 0;
+    return (mask & (1 << idx)) != 0;
 }

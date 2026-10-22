@@ -17,10 +17,10 @@ void dfs(int now, int prev) {
 }
 
 void eulerTour(int root) { // 비어 있지 않은 트리
-    int n = edges.size();
+    int len = edges.size();
     timer = 0;
-    tin.assign(n, 0);
-    tout.assign(n, 0);
-    order.assign(n, 0);
+    tin.assign(len, 0);
+    tout.assign(len, 0);
+    order.assign(len, 0);
     dfs(root, root);
 }

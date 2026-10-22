@@ -1,16 +1,18 @@
 #include <vector>
 using namespace std;
+using ll = long long;
 
-vector<int> arr;
-long long target, ans;
+vector<int> nums;
+ll target;
+int ans;
 
-long long countSubsets() {
-    int n = arr.size(); // n <= 20
+int countSubsets() {
+    int len = nums.size(); // len <= 20
     ans = 0;
-    for (int mask = 0; mask < (1 << n); mask++) {
-        long long sum = 0;
-        for (int i = 0; i < n; i++) {
-            if (mask & (1 << i)) sum += arr[i];
+    for (int mask = 0; mask < (1 << len); mask++) {
+        ll sum = 0;
+        for (int i = 0; i < len; i++) {
+            if (mask & (1 << i)) sum += nums[i];
         }
         if (sum == target) ans++;
     }

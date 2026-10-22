@@ -2,12 +2,12 @@
 #include <vector>
 using namespace std;
 
-vector<int> arr;
+vector<int> nums;
 map<int, int> cnt;
 
 void countValues() {
     cnt.clear();
-    for (int now : arr) {
+    for (int now : nums) {
         cnt[now]++;
     }
 }

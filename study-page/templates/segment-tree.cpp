@@ -1,11 +1,13 @@
 #include <vector>
 using namespace std;
+using ll = long long;
 
-vector<long long> arr, tree;
+vector<int> nums;
+vector<ll> tree;
 
 void build(int node, int left, int right) {
     if (left == right) {
-        tree[node] = arr[left];
+        tree[node] = nums[left];
         return;
     }
     int mid = left + (right - left) / 2;
@@ -15,14 +17,15 @@ void build(int node, int left, int right) {
 }
 
 void initSegment() {
-    tree.assign(arr.size() * 4 + 4, 0);
-    if (!arr.empty()) build(1, 0, static_cast<int>(arr.size()) - 1);
+    int len = nums.size();
+    tree.assign(len * 4 + 4, 0);
+    if (len > 0) build(1, 0, len - 1);
 }
 
-void update(int node, int left, int right, int idx, long long value) {
+void update(int node, int left, int right, int idx, int value) {
     if (left == right) {
         tree[node] = value;
-        arr[idx] = value;
+        nums[idx] = value;
         return;
     }
     int mid = left + (right - left) / 2;
@@ -31,10 +34,10 @@ void update(int node, int left, int right, int idx, long long value) {
     tree[node] = tree[node * 2] + tree[node * 2 + 1];
 }
 
-long long query(int node, int left, int right, int ql, int qr) {
+ll query(int node, int left, int right, int ql, int qr) {
     if (qr < left || right < ql) return 0;
     if (ql <= left && right <= qr) return tree[node];
     int mid = left + (right - left) / 2;
     return query(node * 2, left, mid, ql, qr)
-         + query(node * 2 + 1, mid + 1, right, ql, qr);
+        + query(node * 2 + 1, mid + 1, right, ql, qr);
 }

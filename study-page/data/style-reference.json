@@ -1,0 +1,30 @@
+{
+  "reviewedAt": "2026-10-22",
+  "references": [
+    {
+      "path": "LeetCode/누적합/1094_Car Pooling.cpp",
+      "commit": "3d8d475",
+      "sha256": "addfe2d7e6d6c6df7428929073f4a9d21e831d87306cef3ba7f47947c04a5397"
+    },
+    {
+      "path": "LeetCode/단조스택+큐/239_Sliding Window Maximum.cpp",
+      "commit": "c95fb41",
+      "sha256": "6981bece5c2d2199cf83906d947be255fbad6cc3a4225756359e4739f8c49a95"
+    },
+    {
+      "path": "LeetCode/단조스택+큐/739_Daily Temperatures.cpp",
+      "commit": "313ef2d",
+      "sha256": "2230a532bb8c40f5a21e11ec458820b71eda045e5e258eea24167d9dee7abfcd"
+    },
+    {
+      "path": "LeetCode/단조스택+큐/84_Largest Rectangle in Histogram.cpp",
+      "commit": "333c459",
+      "sha256": "da1da1c55e4eaa291297c687193f3930478219decff438e90b6d7def951f5b54"
+    },
+    {
+      "path": "Programmers/힙/더맵게.cpp",
+      "commit": "3eb5942",
+      "sha256": "40a114c77a66f6d389a4e19b9e0022c29bff404737cce3b052b6a047d7fa668f"
+    }
+  ]
+}

@@ -1,9 +1,10 @@
-#include <cstdint>
+#include <iostream>
 using namespace std;
+using ll = long long;
 
-long long gcdValue(long long a, long long b) { // a, b >= 0
+ll gcdValue(ll a, ll b) { // a, b >= 0
     while (b != 0) {
-        long long next = a % b;
+        ll next = a % b;
         a = b;
         b = next;
     }

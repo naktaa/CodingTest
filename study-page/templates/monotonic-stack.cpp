@@ -2,13 +2,14 @@
 #include <vector>
 using namespace std;
 
-vector<int> arr, ans;
+vector<int> nums, ans;
 
 void nextGreaterDistance() {
-    ans.assign(arr.size(), 0);
+    int len = nums.size();
+    ans.assign(len, 0);
     stack<int> st;
-    for (int i = 0; i < static_cast<int>(arr.size()); i++) {
-        while (!st.empty() && arr[st.top()] < arr[i]) {
+    for (int i = 0; i < len; i++) {
+        while (!st.empty() && nums[st.top()] < nums[i]) {
             int idx = st.top();
             st.pop();
             ans[idx] = i - idx;

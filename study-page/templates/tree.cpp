@@ -15,8 +15,9 @@ void dfs(int now, int prev) {
 }
 
 void traverse(int root) { // edges는 비어 있지 않은 트리
-    parent.assign(edges.size(), -1);
-    depth.assign(edges.size(), 0);
+    int len = edges.size();
+    parent.assign(len, -1);
+    depth.assign(len, 0);
     order.clear();
     dfs(root, root);
 }

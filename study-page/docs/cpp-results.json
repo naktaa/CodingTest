@@ -1,276 +1,321 @@
 {
-  "compiler": "g++ -std=c++17 -O2 -Wall -Wextra -pedantic",
-  "elapsedSeconds": 1.4,
+  "compiler": "g++ -std=c++17 -O2 -fsanitize=undefined -fno-sanitize-recover=undefined -Wall -Wextra -pedantic",
+  "elapsedSeconds": 1.94,
   "results": [
     {
       "id": "complexity",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "60c1893e35eb99752746211611dfa9acbf1440ab8eb9f0a208ac07c095ed3f19"
     },
     {
       "id": "implementation",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "c242ea9df8d64c67f34626bcab741457c450ed3f7fec8adc45bd40785b92b76d"
     },
     {
       "id": "sorting",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "2d498e94fe6b01c10346180826ddd10940e663beaca68b2b6056a6f830bacfcf"
     },
     {
       "id": "frequency",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "eea66c4253a94a19565618d6f1c730666ef0033cebe7ae9b0d2eb4d925476f3c"
     },
     {
       "id": "stack-queue",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "60d47a7ef4e4c4d40b84d68f05aeb81196068c04929f5fc00cf7b315beddbd9f"
     },
     {
       "id": "heap",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "7c9c427cd1d988fc005a9b41c4ab8f9f82f9b19ee875362ca21e75baa63a1f4b"
     },
     {
       "id": "prefix",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "4b423184220eabc4cf7f35068c4dfb5036384b051bec3d5fcfae3131de74c104"
     },
     {
       "id": "difference",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "ed006ee52f20c3f73f7ba5dcb68696891b31427120a772a03b0d6fc403818e44"
     },
     {
       "id": "two-pointers",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "acf36950ba50720227d5d61dcb15c69728adba1b7751284c7a446760573ec024"
     },
     {
       "id": "sliding-window",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "474a9df55ef8fda41169c5eb58959fcea9acd8b9b115265176cf0314750926b5"
     },
     {
       "id": "binary-search",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "5cda2ff1586fb293ac7d2ad3ba7439b112b4484fd028fae866451945cc7edc88"
     },
     {
       "id": "compression",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "02289828b31ea98ec98a37ee60f887e645bd17154558974885e35b7f7647d0df"
     },
     {
       "id": "greedy",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "4edeb3225443521043e6159099eb992b107fe299945a3fa79e5467d8ee458a6f"
     },
     {
       "id": "intervals",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "ecc5ce5a354cc8881412386c48c265767ba78134d43ce6cd56ca9f0df44a79d3"
     },
     {
       "id": "bruteforce",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "c39f3e8aab5c59af85bc84136a34d910e7de6428dc6cae8afc9f0235ff4b7826"
     },
     {
       "id": "backtracking",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "9cdeacc4b1f675f015a26c70c219af5f774df5594788528f906c5b1f005a4c9d"
     },
     {
       "id": "permutations",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "cfea3986aba11f719b317bb12f57158b1a20189d10fcdaceed111da295d0c7d1"
     },
     {
       "id": "math",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "ff34e49cf6e7afcfe957a03ca636f2add96c61034769cbaf968269652e487ffa"
     },
     {
       "id": "bits",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "178d7d96aca89263f4de0c0b64534c6fc97f38eded96cae0c849378a24e29a84"
     },
     {
       "id": "dfs",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "1b622a2cd869f81f914fced7acb420db2f31485816220fd2e4ffa72ed2eab5e7"
     },
     {
       "id": "bfs",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "b90cbb281bc54330fb9521582837047e5e9055b61369fcaf2b1baab49a59d4b5"
     },
     {
       "id": "multi-bfs",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "7d4b77329f9db342ccf6fcec0c0a3703ce4688a0db126ead2a30d549881e5317"
     },
     {
       "id": "state-bfs",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "86ee0009c69b3e2e40d8f2b2437897b8c8d727c6fb2fe6ae1e604305896f61e7"
     },
     {
       "id": "heap-simulation",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "267f953d8eee17d5b7b94b1df29cbba37e5bb90e0bc562c58350e7aad4e99c2e"
     },
     {
       "id": "monotonic-stack",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "469a2d374604b55123659db702f277319b30b5d407bf4206ebd69c151d4c3fac"
     },
     {
       "id": "monotonic-deque",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "e2b152f5451408e515d9043401ba6f803b3d87af93f3785667b2ea3d7890c086"
     },
     {
       "id": "parametric",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "eda307795979b98b437a8da82dfbfe6b4f5bd32ca3e8582803f683f77f61329f"
     },
     {
       "id": "dijkstra",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "43a24351c514635b7f77bd2a37fc9763fa978c0bd8f9aa6c8717ac8056e6e0b2"
     },
     {
       "id": "floyd",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "ebc1a2cacbee30e45364fe6b28681591b3bb7e355110dfc8f8f96b60043bd15f"
     },
     {
       "id": "topological",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "5abdfe8fda75e701d3fd5af0f9d246dc4ea3fdb5ffe84cd4f16ea367e4cfb64b"
     },
     {
       "id": "dsu",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "c952d05fcf5f3dbab496d5f1066603145fb234415ab38c2194591e67effdf2ec"
     },
     {
       "id": "mst",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "95a6ec63770c8e4a0070935049e6de92e79a8ec0f4d66c3672b54c8a15e49f2e"
     },
     {
       "id": "dp",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "4f658f352f387888f34f7bdf86d475415fc8cea0997f6c8532921ddf54d4ed7b"
     },
     {
       "id": "knapsack",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "68dad87f847e0cded17e0db6cc6eba7f345e4b41a0d387e76d1041f8a341922a"
     },
     {
       "id": "lis",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "a14df610407f36934298c9664a62d74815798f7083c352cf0bd084120415fc22"
     },
     {
       "id": "interval-dp",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "70f5b7f40497deb3f064f0f880bc95dcbfc3f1e663b86d3bff792622e007b976"
     },
     {
       "id": "tree",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "9c43df5eadac0292dec1ad881477ed532edd94b2d3bff0e8cb7cc850ba49e77f"
     },
     {
       "id": "tree-dp",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "a9948363fb85a4745d8a8ced81adc52e3232dbe815e4a9e52b6098bf5266324a"
     },
     {
       "id": "zero-one-bfs",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "195b1670ccddf334f16c1791d63e6545949560de5d10c50c89011ac3cacab95d"
     },
     {
       "id": "bellman-ford",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "1d642afb6a76b7e37752344938c352327c58e0d3417569cf6f2e348ac0dc5b23"
     },
     {
       "id": "bitmask-dp",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "f8895d506abb792ea91fbb58a46b843edaf761f5d85f1df687aaf36df0caf7df"
     },
     {
       "id": "fenwick",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "9b0c9564cadb22a2f52079799de747f3776b4fec67df18683c02f14d48d3de2b"
     },
     {
       "id": "segment-tree",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "67ec32c0de2f93baf617ee8439f451cc32a1ac6256aea54face5772e9ceb6e3d"
     },
     {
       "id": "euler-tour",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "0c5062e7e99984b52991c2af59561bb4b1f007ef8f773afb41452b71951aae07"
     },
     {
       "id": "lca",
       "passed": true,
       "phase": "run",
-      "details": ""
+      "details": "",
+      "sourceHash": "10c0d409bf1cbdeba4ce7fce22a7b3b818fd71a8bc8d74b22ca83f5159fb33bb"
     }
   ]
 }

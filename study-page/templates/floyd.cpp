@@ -1,26 +1,26 @@
 #include <algorithm>
-#include <limits>
 #include <vector>
 using namespace std;
+using ll = long long;
 
-const long long INF = numeric_limits<long long>::max() / 4;
-vector<vector<long long>> dist;
+const ll INF = 1'000'000'000'000'000'000LL;
+vector<vector<ll>> dist;
 
-void initFloyd(int n) {
-    dist.assign(n, vector<long long>(n, INF));
-    for (int i = 0; i < n; i++) dist[i][i] = 0;
+void initFloyd(int N) {
+    dist.assign(N, vector<ll>(N, INF));
+    for (int i = 0; i < N; i++) dist[i][i] = 0;
 }
 
-void addEdge(int from, int to, long long weight) {
-    dist[from][to] = min(dist[from][to], weight);
+void addEdge(int from, int to, int weight) {
+    if (weight < dist[from][to]) dist[from][to] = weight;
 }
 
 void floyd() {
-    int n = dist.size();
-    for (int k = 0; k < n; k++) {
-        for (int i = 0; i < n; i++) {
+    int len = dist.size();
+    for (int k = 0; k < len; k++) {
+        for (int i = 0; i < len; i++) {
             if (dist[i][k] == INF) continue;
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < len; j++) {
                 if (dist[k][j] == INF) continue;
                 dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
             }

@@ -1,36 +1,47 @@
 #include <algorithm>
-#include <array>
-#include <functional>
 #include <queue>
-#include <utility>
 #include <vector>
 using namespace std;
+using ll = long long;
 
-vector<pair<long long, long long>> jobs;
+struct node {
+    int start, cost;
+    int idx = 0;
+
+    bool operator<(const node& next) const {
+        if (cost != next.cost) return cost > next.cost;
+        return idx > next.idx;
+    }
+};
+
+vector<node> jobs, sortedJobs; // 입력은 {도착, 처리}, idx는 함수에서 채움
 vector<int> ans;
-vector<array<long long, 3>> sortedJobs;
+
+bool cmp(const node& now, const node& next) {
+    if (now.start != next.start) return now.start < next.start;
+    return now.idx < next.idx;
+}
 
 void scheduleJobs() {
+    int len = jobs.size();
     sortedJobs.clear();
     ans.clear();
-    for (int i = 0; i < static_cast<int>(jobs.size()); i++) {
-        sortedJobs.push_back({jobs[i].first, jobs[i].second, i});
+    for (int i = 0; i < len; i++) {
+        sortedJobs.push_back({jobs[i].start, jobs[i].cost, i});
     }
-    sort(sortedJobs.begin(), sortedJobs.end());
-    priority_queue<pair<long long, int>, vector<pair<long long, int>>,
-                   greater<pair<long long, int>>> pq;
+    sort(sortedJobs.begin(), sortedJobs.end(), cmp);
+    priority_queue<node> pq;
     int idx = 0;
-    int n = jobs.size();
-    long long now = 0;
-    while (idx < n || !pq.empty()) {
-        if (pq.empty()) now = max(now, sortedJobs[idx][0]);
-        while (idx < n && sortedJobs[idx][0] <= now) {
-            pq.push({sortedJobs[idx][1], static_cast<int>(sortedJobs[idx][2])});
+    ll now = 0;
+    while (idx < len || !pq.empty()) {
+        if (pq.empty() && now < sortedJobs[idx].start) now = sortedJobs[idx].start;
+        while (idx < len && sortedJobs[idx].start <= now) {
+            pq.push(sortedJobs[idx]);
             idx++;
         }
-        auto next = pq.top();
+        node next = pq.top();
         pq.pop();
-        now += next.first;
-        ans.push_back(next.second);
+        now += next.cost;
+        ans.push_back(next.idx);
     }
 }

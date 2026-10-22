@@ -1,27 +1,38 @@
 #include <deque>
-#include <limits>
-#include <utility>
 #include <vector>
 using namespace std;
 
-vector<vector<pair<int, int>>> edges; // next, weight (0 or 1)
+const int INF = 1'000'000'000;
+
+struct edge {
+    int to, weight; // weight는 0 또는 1
+};
+
+struct node {
+    int cost, idx;
+};
+
+vector<vector<edge>> edges;
 vector<int> dist;
 
-void zeroOneBfs(int start) {
-    dist.assign(edges.size(), numeric_limits<int>::max() / 4);
-    deque<pair<int, int>> dq; // distance, vertex
+void zeroOneBfs(int start) { // N <= 200000
+    int len = edges.size();
+    dist.assign(len, INF);
+    deque<node> dq;
     dist[start] = 0;
     dq.push_front({0, start});
     while (!dq.empty()) {
-        auto [cost, now] = dq.front();
+        node top = dq.front();
         dq.pop_front();
+        int cost = top.cost;
+        int now = top.idx;
         if (cost != dist[now]) continue;
-        for (const auto& [next, weight] : edges[now]) {
-            int nextCost = cost + weight;
-            if (nextCost >= dist[next]) continue;
-            dist[next] = nextCost;
-            if (weight == 0) dq.push_front({nextCost, next});
-            else dq.push_back({nextCost, next});
+        for (edge next : edges[now]) {
+            int nextCost = cost + next.weight;
+            if (nextCost >= dist[next.to]) continue;
+            dist[next.to] = nextCost;
+            if (next.weight == 0) dq.push_front({nextCost, next.to});
+            else dq.push_back({nextCost, next.to});
         }
     }
 }

@@ -1,21 +1,19 @@
 #include <algorithm>
-#include <limits>
 #include <utility>
 #include <vector>
 using namespace std;
 
-vector<pair<long long, long long>> intervals;
+vector<pair<int, int>> intervals; // -10^9 <= 시작 < 종료 <= 10^9
 int ans;
 
-bool cmp(const pair<long long, long long>& now,
-         const pair<long long, long long>& next) {
+bool cmp(const pair<int, int>& now, const pair<int, int>& next) {
     if (now.second != next.second) return now.second < next.second;
     return now.first < next.first;
 }
 
 int maxMeetings() {
     sort(intervals.begin(), intervals.end(), cmp);
-    long long last = numeric_limits<long long>::lowest();
+    int last = -1'000'000'001; // 가능한 시작 시각보다 작음
     ans = 0;
     for (const auto& now : intervals) {
         if (now.first < last) continue;

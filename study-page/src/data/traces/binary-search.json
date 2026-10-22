@@ -1,0 +1,879 @@
+{
+  "topic": "binary-search",
+  "sourceHash": "5cda2ff1586fb293ac7d2ad3ba7439b112b4484fd028fae866451945cc7edc88",
+  "generator": "C++17 execution of instrumented canonical template",
+  "sourceLines": 16,
+  "cases": [
+    {
+      "id": "duplicates",
+      "label": "중복된 값: [1,2,2,5], x=2",
+      "input": {
+        "nums": [
+          1,
+          2,
+          2,
+          5
+        ],
+        "x": 2
+      },
+      "expected": 1,
+      "steps": [
+        {
+          "line": 7,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 8,
+          "event": "left",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 9,
+          "event": "right",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 11,
+          "event": "middle",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "compare",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 13,
+          "event": "move-right",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 11,
+          "event": "middle",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": 1,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "compare",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": 1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": 1,
+            "current": -1
+          }
+        },
+        {
+          "line": 13,
+          "event": "move-right",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": 1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": 1,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": 1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 11,
+          "event": "middle",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "compare",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "move-left",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 15,
+          "event": "return",
+          "before": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 1,
+            "right": 1,
+            "mid": -1,
+            "current": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "label": "최댓값보다 큰 x=9 → end",
+      "input": {
+        "nums": [
+          1,
+          2,
+          2,
+          5
+        ],
+        "x": 9
+      },
+      "expected": 4,
+      "steps": [
+        {
+          "line": 7,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 8,
+          "event": "left",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 9,
+          "event": "right",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 11,
+          "event": "middle",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "compare",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "move-left",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 3,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 3,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 3,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 11,
+          "event": "middle",
+          "before": {
+            "left": 3,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 3,
+            "right": 4,
+            "mid": 3,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "compare",
+          "before": {
+            "left": 3,
+            "right": 4,
+            "mid": 3,
+            "current": -1
+          },
+          "after": {
+            "left": 3,
+            "right": 4,
+            "mid": 3,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "move-left",
+          "before": {
+            "left": 3,
+            "right": 4,
+            "mid": 3,
+            "current": -1
+          },
+          "after": {
+            "left": 4,
+            "right": 4,
+            "mid": 3,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 4,
+            "right": 4,
+            "mid": 3,
+            "current": -1
+          },
+          "after": {
+            "left": 4,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 15,
+          "event": "return",
+          "before": {
+            "left": 4,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 4,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "begin",
+      "label": "최솟값보다 작은 x=0 → begin",
+      "input": {
+        "nums": [
+          1,
+          2,
+          2,
+          5
+        ],
+        "x": 0
+      },
+      "expected": 0,
+      "steps": [
+        {
+          "line": 7,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 8,
+          "event": "left",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 9,
+          "event": "right",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 11,
+          "event": "middle",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "compare",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 13,
+          "event": "move-right",
+          "before": {
+            "left": 0,
+            "right": 4,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": 2,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": 2,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 11,
+          "event": "middle",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": 1,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "compare",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": 1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 2,
+            "mid": 1,
+            "current": -1
+          }
+        },
+        {
+          "line": 13,
+          "event": "move-right",
+          "before": {
+            "left": 0,
+            "right": 2,
+            "mid": 1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": 1,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": 1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 11,
+          "event": "middle",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          }
+        },
+        {
+          "line": 12,
+          "event": "compare",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          }
+        },
+        {
+          "line": 13,
+          "event": "move-right",
+          "before": {
+            "left": 0,
+            "right": 1,
+            "mid": 0,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": 0,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": 0,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 15,
+          "event": "return",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "empty",
+      "label": "빈 배열",
+      "input": {
+        "nums": [],
+        "x": 2
+      },
+      "expected": 0,
+      "steps": [
+        {
+          "line": 7,
+          "event": "length",
+          "before": null,
+          "after": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 8,
+          "event": "left",
+          "before": {
+            "left": -1,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 9,
+          "event": "right",
+          "before": {
+            "left": 0,
+            "right": -1,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 10,
+          "event": "condition",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1
+          }
+        },
+        {
+          "line": 15,
+          "event": "return",
+          "before": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1
+          },
+          "after": {
+            "left": 0,
+            "right": 0,
+            "mid": -1,
+            "current": -1
+          }
+        }
+      ]
+    }
+  ]
+}

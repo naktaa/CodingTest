@@ -1,23 +1,24 @@
 #include <vector>
 using namespace std;
+using ll = long long;
 
-int n;
-vector<long long> diff, ans;
+int N;
+vector<ll> diff, ans;
 
 void initDifference(int size) {
-    n = size;
-    diff.assign(n + 1, 0);
-    ans.assign(n, 0);
+    N = size;
+    diff.assign(N + 1, 0);
+    ans.assign(N, 0);
 }
 
-void addRange(int left, int right, long long value) {
+void addRange(int left, int right, ll value) {
     diff[left] += value;
     diff[right] -= value; // [left, right)
 }
 
 void restore() {
-    long long now = 0;
-    for (int i = 0; i < n; i++) {
+    ll now = 0;
+    for (int i = 0; i < N; i++) {
         now += diff[i];
         ans[i] = now;
     }

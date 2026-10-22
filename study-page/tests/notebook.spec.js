@@ -20,15 +20,22 @@ test('첫 페이지의 전체 목차와 로컬 한글 폰트', async ({page}) =>
 
 test('45개 주제의 본문·추적표·원본 템플릿·목차', async ({page}) => {
     test.setTimeout(90000);
+    const errors=[];page.on('pageerror',e=>errors.push(e.message));
     for(const topic of catalog){
         await page.goto(`/topics/${topic.id}`);
         await expect(page.locator('h1')).toHaveText(topic.title);
-        await expect(page.locator('article section')).toHaveCount(10);
+        await expect(page.locator('article section')).toHaveCount(8);
         await expect(page.locator('#trace tbody tr')).not.toHaveCount(0);
-        expect(await page.locator('.code-block pre code').textContent()).toBe(await template(topic.id));
-        expect(await page.locator('pre').evaluate(el=>el.scrollHeight<=el.clientHeight+2)).toBe(true);
-        await expect(page.locator('.toc nav a')).toHaveCount(10);
+        expect(await page.locator('#template .code-block pre code').textContent()).toBe(await template(topic.id));
+        expect(await page.locator('pre').evaluateAll(els=>els.every(el=>el.scrollHeight<=el.clientHeight+2))).toBe(true);
+        await expect(page.locator('.toc nav a')).toHaveCount(8);
+        expect(await page.locator('#template').evaluate(el=>el.compareDocumentPosition(document.querySelector('#variables')) & Node.DOCUMENT_POSITION_FOLLOWING)).toBeTruthy();
+        const data=JSON.parse(await fs.readFile(new URL(`../src/content/topics/${topic.id}.json`,import.meta.url),'utf8'));
+        const lines=(await template(topic.id)).trimEnd().split('\n');
+        for (const [i,part] of data.lesson.walkthrough.entries()) expect(await page.locator('#steps pre code').nth(i).textContent()).toBe(lines.slice(part.from-1,part.to).join('\n'));
+
     }
+    expect(errors).toEqual([]);
 });
 
 test('문제 표현과 문제 번호 검색', async ({page}) => {
@@ -71,27 +78,25 @@ test('새로고침·뒤로·앞으로·목차 주소', async ({page}) => {
     await expect(page.locator('#trace')).toBeInViewport();
 });
 
-test('테마 저장·복원과 저장 불가 환경', async ({page,context}) => {
-    await page.goto('/topics/prefix');
-    await page.getByRole('button',{name:'어두운 테마로 전환'}).click();
-    await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
-    expect(await page.evaluate(()=>getComputedStyle(document.documentElement).backgroundColor)).toBe('rgb(23, 29, 26)');
-    expect(await page.evaluate(()=>getComputedStyle(document.body).color)).toBe('rgb(209, 217, 209)');
+test('운영체제의 어두운 설정과 이전 저장값에도 흰 화면', async ({page}) => {
+    await page.emulateMedia({colorScheme:'dark'});
+    await page.addInitScript(()=>localStorage.setItem('study-theme','dark'));
+    await page.goto('/topics/sliding-window');
+    await expect(page.getByRole('button',{name:/테마|모드/})).toHaveCount(0);
+    expect(await page.locator('html').getAttribute('data-theme')).toBeNull();
+    expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundColor)).toBe('rgb(255, 255, 255)');
     await page.reload();
-    await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
-    expect(await page.evaluate(()=>Object.keys(localStorage))).toEqual(['study-theme']);
-    await context.clearCookies();
-    await page.addInitScript(()=>{Object.defineProperty(window,'localStorage',{get(){throw new Error('blocked');}});});
-    await page.reload();
-    await expect(page.locator('h1')).toHaveText('누적합');
+    expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundColor)).toBe('rgb(255, 255, 255)');
+    await page.addInitScript(()=>{Object.defineProperty(window,'localStorage',{get(){throw Error('blocked');}});});
+    await page.reload();await expect(page.locator('h1')).toHaveText('슬라이딩 윈도우');
 });
 
 test('복사한 템플릿이 원본과 동일', async ({page,context}) => {
     await context.grantPermissions(['clipboard-read','clipboard-write']);
     await page.goto('/topics/segment-tree');
-    await page.getByRole('button',{name:'C++17 · 기본 함수 코드 복사'}).click();
+    await page.getByRole('button',{name:'C++17 · 전체 템플릿 코드 복사'}).click();
     expect(await page.evaluate(()=>navigator.clipboard.readText())).toBe(await template('segment-tree'));
-    await expect(page.getByRole('status')).toContainText('복사했습니다');
+    await expect(page.locator('#template [role=status]')).toContainText('복사했습니다');
 });
 
 test('원본 풀이의 코드·링크·난이도', async ({page}) => {
@@ -148,7 +153,7 @@ test('모바일 메뉴 포커스·Escape·문서 가독성', async ({page}) => {
     await expect(page).toHaveURL(/#steps$/);
     await expect(page.locator('#steps')).toBeInViewport();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-    expect(await page.locator('pre').evaluate(el=>el.scrollHeight<=el.clientHeight+2)).toBe(true);
+    expect(await page.locator('pre').evaluateAll(els=>els.every(el=>el.scrollHeight<=el.clientHeight+2))).toBe(true);
 });
 
 test('모바일 320px·태블릿·데스크톱과 잘못된 주소', async ({page}) => {

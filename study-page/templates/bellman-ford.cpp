@@ -1,27 +1,29 @@
-#include <array>
-#include <limits>
 #include <vector>
 using namespace std;
+using ll = long long;
 
-const long long INF = numeric_limits<long long>::max() / 4;
-int n;
-vector<array<long long, 3>> edges; // from, to, weight
-vector<long long> dist;
+const ll INF = 1'000'000'000'000'000'000LL;
 
-bool bellmanFord(int start) {
-    dist.assign(n, INF);
+struct edge {
+    int from, to, weight;
+};
+
+int N;
+vector<edge> edges;
+vector<ll> dist;
+
+bool bellmanFord(int start) { // N <= 500, 간선 <= 5000, |weight| <= 10^9
+    dist.assign(N, INF);
     dist[start] = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
         bool updated = false;
-        for (const auto& edge : edges) {
-            int from = static_cast<int>(edge[0]);
-            int to = static_cast<int>(edge[1]);
-            if (dist[from] == INF) continue;
-            long long next = dist[from] + edge[2];
-            if (next >= dist[to]) continue;
-            dist[to] = next;
+        for (edge now : edges) {
+            if (dist[now.from] == INF) continue;
+            ll next = dist[now.from] + now.weight;
+            if (next >= dist[now.to]) continue;
+            dist[now.to] = next;
             updated = true;
-            if (i == n - 1) return false;
+            if (i == N - 1) return false;
         }
         if (!updated) return true;
     }

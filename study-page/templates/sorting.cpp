@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-vector<pair<int, string>> arr;
+vector<pair<int, string>> nums;
 
 bool cmp(const pair<int, string>& now, const pair<int, string>& next) {
     if (now.first != next.first) {
@@ -14,5 +14,5 @@ bool cmp(const pair<int, string>& now, const pair<int, string>& next) {
 }
 
 void sortRecords() {
-    sort(arr.begin(), arr.end(), cmp);
+    sort(nums.begin(), nums.end(), cmp);
 }
