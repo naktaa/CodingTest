@@ -11,7 +11,7 @@ test('첫 페이지의 전체 목차와 로컬 한글 폰트', async ({page}) =>
     await page.goto('/');
     await expect(page.locator('h1')).toContainText('알고리즘을 고르는 기준');
     await expect(page.locator('.topic-directory a')).toHaveCount(45);
-    await expect(page.locator('.home-meta')).toContainText('211');
+    await expect(page.locator('.home-meta')).toContainText(String(solutions.length));
     await page.evaluate(()=>document.fonts.ready);
     expect(await page.evaluate(()=>document.fonts.check('14px "Noto Sans KR Variable"'))).toBe(true);
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
@@ -122,7 +122,7 @@ test('백준 기록의 출처와 파일명 번호 불일치 표시', async ({pag
 test('내 풀이 플랫폼·유형·난이도 필터', async ({page}) => {
     await page.goto('/solutions');
     await page.getByLabel('플랫폼',{exact:true}).selectOption('LeetCode');
-    await expect(page.locator('.solution-row')).toHaveCount(23);
+    await expect(page.locator('.solution-row')).toHaveCount(solutions.filter(s=>s.platform==='LeetCode').length);
     await page.getByLabel('알고리즘',{exact:true}).selectOption('monotonic-deque');
     await expect(page.locator('.solution-row')).toHaveCount(1);
     await expect(page.locator('.solution-title')).toHaveText('Sliding Window Maximum');

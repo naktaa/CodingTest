@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-22",
+  "scope": "개인 코테 공부 노트 문체",
+  "topics": 45,
+  "mistakeNotes": 11,
+  "guides": 6,
+  "quickNotes": 4,
+  "rewritten": [
+    "문제·핵심 아이디어·진입 함수 안내",
+    "실행 순서별 소제목과 설명",
+    "입력 범위·자료형·변수 정의",
+    "경계값·반례·최종 상태",
+    "정적 그림 설명·공통 실수 노트",
+    "시각화 3개 주제의 모든 단계 안내"
+  ],
+  "preservation": {
+    "checkedFiles": 264,
+    "originalCpp": 213,
+    "templateCpp": 45,
+    "traceJson": 3,
+    "existingExecutables": 3,
+    "changed": []
+  },
+  "checks": {
+    "content": "passed",
+    "cppWithStandaloneHeadersAndUBSan": "45/45 passed",
+    "traceCases": 12,
+    "traceSteps": 288,
+    "differentialCases": 300,
+    "build": "passed",
+    "browserTests": "19/19 passed",
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "screenshotsCaptured": 11
+  },
+  "example": {
+    "before": "원소 반영 → 조건 복구 → 답 갱신.",
+    "after": "오른쪽 문자 추가 → 중복 제거 → 최대 길이 갱신.",
+    "reason": "abb에서 a만 빼면 bb가 남으므로 if 대신 while 필요. left를 먼저 늘리면 제거할 a 대신 다음 b의 빈도를 줄여 구간과 cnt가 달라짐."
+  },
+  "notes": [
+    "기존 sync 명령으로 현재 로컬 풀이 목록 갱신. 원문·출처 정보는 현 파일 기준.",
+    "Windows node_modules·start.cmd 보존. Linux 임시 복사본에서 검증.",
+    "Vite의 기존 내 풀이 청크 크기 경고 유지."
+  ]
+}

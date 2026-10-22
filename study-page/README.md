@@ -17,7 +17,7 @@ npm.cmd run dev
 브라우저에서 `http://localhost:5173`을 엽니다. 다른 포트가 표시되면 터미널에 나온 주소를 사용하세요. `npm.cmd run build`로 빌드하고 `npm.cmd run preview`로 빌드 결과를 확인합니다. PowerShell 실행 정책은 변경하지 않습니다.
 
 - `src/content/topics/` — 주제별 문서
-- `AGENTS.md` — 기존 풀이 5개를 기준으로 기록한 C++ 작성 규칙
+- `AGENTS.md` — 기존 풀이 5개를 기준으로 기록한 C++ 작성 규칙·공부 노트 문체
 - `templates/` — 화면에서 그대로 표시하는 기본 C++17 함수
 - `src/data/traces/` — 실제 C++ 실행에서 생성한 단계별 시각화 기록
 - `data/problems.json` — 출처와 확인 날짜가 있는 문제 정보

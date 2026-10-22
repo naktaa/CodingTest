@@ -44,14 +44,14 @@ export default function StepVisualizer({ topicId, code }) {
         <p className="example-input"><strong>입력</strong> {JSON.stringify(example.input)}<br/><strong>최종 반환 / 결과</strong> {JSON.stringify(example.expected)}</p>
         <div className="step-controls"><button onClick={() => setIndex(Math.max(0, index - 1))} disabled={index === 0}>← 이전</button><button onClick={() => setIndex(Math.min(example.steps.length - 1, index + 1))} disabled={index === example.steps.length - 1}>다음 →</button><button onClick={() => setIndex(0)} disabled={index === 0}>초기화</button><span aria-live="polite">{index + 1} / {example.steps.length} 단계</span></div>
         <div className="visual-state" role="group" aria-label="배열과 포인터">
-            <p>{isBinary ? '후보 구간 [left, right) · right는 포함하지 않습니다.' : isDeque ? '현재 윈도우 [i − K + 1, i] · 음수 시작점이면 아직 K개가 모이지 않았습니다.' : '현재 구간 [left, right] · 양 끝을 모두 포함합니다.'}</p>
+            <p>{isBinary ? '후보 구간 [left, right) · right는 제외 끝.' : isDeque ? '현재 윈도우 [i − K + 1, i] · 시작점이 음수이면 아직 K개 미만.' : '현재 구간 [left, right] · 양 끝 포함.'}</p>
             <div className="array-strip">{values.map((value, i) => <div className={`array-entry ${active(i) ? 'in-window' : ''} ${(isBinary ? state.mid === i : state.right === i) ? 'current-element' : ''}`} key={i}><span className="index-label">{i}</span><strong className="array-cell">{value}</strong><span className="pointer-label">{markers(i)}</span></div>)}{isBinary && <div className="array-entry end-entry"><span className="index-label">N = {values.length}</span><span className="array-cell">끝</span><span className="pointer-label">{markers(values.length)}</span></div>}</div>
-            {!values.length && !isBinary && <p>원소가 없는 빈 입력입니다.</p>}
+            {!values.length && !isBinary && <p>원소가 없는 빈 입력.</p>}
             {isDeque && <><h4>덱 · 앞 → 뒤 (인덱스 : 값)</h4><div className="deque-strip" aria-label="덱 내용">{state.dq.length ? state.dq.map(i => <span key={i}>{i} : {values[i]}</span>) : '비어 있음'}</div></>}
         </div>
         <div aria-live="polite" aria-atomic="true" className="step-reason"><h3>{step.line}행 · {title}</h3><Text>{reason}</Text></div>
         <div className="execution-grid"><CodeBlock code={snippet} name="현재 실행 부분" startLine={start} activeLine={step.line} numbered/>
         <Table headers={['변수 / 자료구조', '실행 전', '실행 후']} rows={rows} caption="현재 코드 줄의 실행 전후 상태"/></div>
-        <p>위 코드는 <a href="#template">전체 템플릿</a>의 {start}–{end}행입니다. 조건 검사도 한 단계로 표시하며, 다음 버튼은 기록된 C++ 실행을 한 번씩 진행합니다.</p>
+        <p>위 코드는 <a href="#template">전체 템플릿</a>의 {start}–{end}행. 조건 검사도 한 단계로 표시. 다음 버튼으로 기록된 C++ 실행을 한 단계씩 이동.</p>
     </div>;
 }

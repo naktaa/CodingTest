@@ -23,7 +23,7 @@ for (const data of [sliding, deque, binary]) {
                 await expect(visual.locator('[data-active-line]')).toHaveAttribute('data-active-line',String(step.line));
                 const start=Math.max(1,step.line-2),end=Math.min(code.trimEnd().split('\n').length,step.line+2);
                 expect(await visual.locator('pre code').textContent()).toBe(code.trimEnd().split('\n').slice(start-1,end).join('\n'));
-                await expect(visual.locator('.step-reason')).not.toContainText(/undefined|NaN/);
+                await expect(visual.locator('.step-reason')).not.toContainText(/undefined|NaN|(?<!아)니다|세요|원소 반영|조건 복구|해당 시점/);
                 const marker=await visual.locator('.execution-marker').boundingBox();
                 const body=await visual.locator('.code-body').boundingBox();
                 expect(Math.abs(marker.y-body.y-(20+(step.line-start)*28))).toBeLessThan(1);

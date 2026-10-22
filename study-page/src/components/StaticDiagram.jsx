@@ -11,6 +11,6 @@ export default function StaticDiagram({ diagram }) {
             })}
             {diagram.nodes.map((n, i) => <g key={i}>{n.range ? <rect x={n.x-57} y={n.y-25} width="114" height="62" rx="4" fill="white" stroke="currentColor"/> : <circle cx={n.x} cy={n.y} r="27" fill="white" stroke="currentColor" strokeWidth="1.5"/>}<text x={n.x} y={n.y + 6} textAnchor="middle" fontSize="20">{n.label ?? i}</text>{n.range && <text x={n.x} y={n.y+27} textAnchor="middle" fontSize="18">{n.range}</text>}</g>)}
         </svg> : diagram.rows.map((row, i) => <div className="diagram-row" key={i}><strong>{row.label}</strong><div className="array-strip">{row.values.map((value, j) => <div className="array-entry" key={j}><span className="index-label">{row.indices?.[j] ?? j}</span><span className="array-cell">{String(value)}</span></div>)}</div></div>)}
-        <figcaption>{diagram.caption}{diagram.nodes && <p className="diagram-hint">좁은 화면에서는 그림을 좌우로 스크롤할 수 있습니다.</p>}</figcaption>
+        <figcaption>{diagram.caption}{diagram.nodes && <p className="diagram-hint">좁은 화면에서는 좌우로 스크롤해 그림 확인.</p>}</figcaption>
     </figure>;
 }

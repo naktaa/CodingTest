@@ -1,14 +1,12 @@
 {
   "config": {
     "argv": [
-      "/tmp/node-v22.23.4-linux-x64/bin/node",
-      "/mnt/e/CodingTest/study-page/node_modules/.bin/playwright",
-      "test",
-      "--grep",
-      "테마 저장|모바일 메뉴|모바일 320px"
+      "/tmp/study-tone-tools/node-v22.23.4-linux-x64/bin/node",
+      "/tmp/study-tone-qa/CodingTest/study-page/node_modules/.bin/playwright",
+      "test"
     ],
-    "configFile": "/mnt/e/CodingTest/study-page/playwright.config.js",
-    "rootDir": "/mnt/e/CodingTest/study-page/tests",
+    "configFile": "/tmp/study-tone-qa/CodingTest/study-page/playwright.config.js",
+    "rootDir": "/tmp/study-tone-qa/CodingTest/study-page/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": false,
@@ -24,7 +22,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/mnt/e/CodingTest/study-page/test-results",
+        "outputDir": "/tmp/study-tone-qa/CodingTest/study-page/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -32,7 +30,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "/mnt/e/CodingTest/study-page/tests",
+        "testDir": "/tmp/study-tone-qa/CodingTest/study-page/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -44,20 +42,20 @@
       {
         "grep": {},
         "grepInvert": null,
-        "outputDir": "/mnt/e/CodingTest/study-page/test-results",
+        "outputDir": "/tmp/study-tone-qa/CodingTest/study-page/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
         "name": "",
-        "testDir": "/mnt/e/CodingTest/study-page/tests",
-        "snapshotDir": "/mnt/e/CodingTest/study-page/tests",
+        "testDir": "/tmp/study-tone-qa/CodingTest/study-page/tests",
+        "snapshotDir": "/tmp/study-tone-qa/CodingTest/study-page/tests",
         "testIgnore": [],
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 30000,
         "use": {
-          "baseURL": "http://127.0.0.1:4173",
+          "baseURL": "http://127.0.0.1:5180",
           "viewport": {
             "width": 1440,
             "height": 1000
@@ -108,7 +106,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "테마 저장·복원과 저장 불가 환경",
+          "title": "첫 페이지의 전체 목차와 로컬 한글 폰트",
           "ok": true,
           "tags": [],
           "tests": [
@@ -123,12 +121,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1870,
+                  "duration": 601,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:10:51.864Z",
+                  "startTime": "2026-10-22T12:08:28.110Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -136,9 +134,315 @@
               "status": "expected"
             }
           ],
-          "id": "12d9203b6a7e4bd3f9fb-f53b2eee9cef6239a08c",
+          "id": "12d9203b6a7e4bd3f9fb-3e15391b62724e766f6e",
           "file": "notebook.spec.js",
-          "line": 74,
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "45개 주제의 본문·추적표·원본 템플릿·목차",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:28.906Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-774e32ab449d0cefce0c",
+          "file": "notebook.spec.js",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "문제 표현과 문제 번호 검색",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 799,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:46.790Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-14c6c1e8eacd9cc24433",
+          "file": "notebook.spec.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "빈 검색·결과 없음·Ctrl K",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 890,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:47.600Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-8910bcc6e40247f7e1be",
+          "file": "notebook.spec.js",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "새로고침·뒤로·앞으로·목차 주소",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1340,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:48.506Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-d44adcff46f95e229794",
+          "file": "notebook.spec.js",
+          "line": 65,
+          "column": 1
+        },
+        {
+          "title": "운영체제의 어두운 설정과 이전 저장값에도 흰 화면",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:49.861Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-6d4ad6f3d04b8bbe4514",
+          "file": "notebook.spec.js",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "복사한 템플릿이 원본과 동일",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:51.076Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-60df10dbd2df2fecd39a",
+          "file": "notebook.spec.js",
+          "line": 94,
+          "column": 1
+        },
+        {
+          "title": "원본 풀이의 코드·링크·난이도",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 613,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:51.762Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-75f8cdf3cd58587b6eed",
+          "file": "notebook.spec.js",
+          "line": 102,
+          "column": 1
+        },
+        {
+          "title": "백준 기록의 출처와 파일명 번호 불일치 표시",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 584,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:52.389Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-539d8cfdf1b07634211b",
+          "file": "notebook.spec.js",
+          "line": 112,
+          "column": 1
+        },
+        {
+          "title": "내 풀이 플랫폼·유형·난이도 필터",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 803,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:52.992Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-3181186faaf92b451db8",
+          "file": "notebook.spec.js",
+          "line": 122,
           "column": 1
         },
         {
@@ -157,12 +461,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1262,
+                  "duration": 1740,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:10:53.941Z",
+                  "startTime": "2026-10-22T12:08:53.813Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -172,7 +476,7 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-743144ece487d3d81887",
           "file": "notebook.spec.js",
-          "line": 130,
+          "line": 135,
           "column": 1
         },
         {
@@ -191,12 +495,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7226,
+                  "duration": 3373,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T15:10:55.226Z",
+                  "startTime": "2026-10-22T12:08:55.575Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -206,7 +510,253 @@
           ],
           "id": "12d9203b6a7e4bd3f9fb-89dd3596c34458834c2c",
           "file": "notebook.spec.js",
-          "line": 152,
+          "line": 159,
+          "column": 1
+        },
+        {
+          "title": "키보드 본문 건너뛰기",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 553,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:58.964Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12d9203b6a7e4bd3f9fb-d82ff87e969fb473053c",
+          "file": "notebook.spec.js",
+          "line": 171,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "visualizations.spec.js",
+      "file": "visualizations.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "sliding-window: 모든 입력·실행 단계·줄 번호·경계·초기화",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19852,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:08:59.554Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-1e80624e981ab605135a",
+          "file": "visualizations.spec.js",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "monotonic-deque: 모든 입력·실행 단계·줄 번호·경계·초기화",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11700,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:09:19.420Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-0dd8fd15f9f7d4ee3a24",
+          "file": "visualizations.spec.js",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "binary-search: 모든 입력·실행 단계·줄 번호·경계·초기화",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:09:31.135Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-4776d0f3141dfa7324e3",
+          "file": "visualizations.spec.js",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "abba: if 한 번으로 복구되지 않는 순간과 복구 후 답 갱신",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1831,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:09:39.127Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-f2fef47e0591f1329ba2",
+          "file": "visualizations.spec.js",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "흰 본문·18px 설명·16px 코드와 표·전체 코드 펼침",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6609,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:09:40.977Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-6cfa5b50fd41bb84a398",
+          "file": "visualizations.spec.js",
+          "line": 55,
+          "column": 1
+        },
+        {
+          "title": "단계 버튼 키보드 조작과 모바일 줄 강조",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 514,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T12:09:47.598Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40bebd7b60f23a106f3b-b0d5bcb537151699e111",
+          "file": "visualizations.spec.js",
+          "line": 74,
           "column": 1
         }
       ]
@@ -214,9 +764,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-21T15:10:49.163Z",
-    "duration": 13746.084000000003,
-    "expected": 3,
+    "startTime": "2026-10-22T12:08:27.426Z",
+    "duration": 80802.742,
+    "expected": 19,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

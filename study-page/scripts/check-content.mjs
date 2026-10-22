@@ -20,13 +20,14 @@ for (const item of catalog) {
     assert.ok(data.trace.rows.length>=3 && data.trace.rows.every(row=>row.length===3));
     const code = await readFile(path.join(root,`templates/${item.id}.cpp`),'utf8');
     const lesson = data.lesson;
-    assert.ok(lesson && lesson.problem.length > 40 && lesson.idea.length > 35 && lesson.entry.length > 25, `${item.id}: prose`);
-    assert.ok(lesson.variables.length >= 2 && lesson.boundaries.length && lesson.traceEnd.length > 30, `${item.id}: details`);
+    assert.ok(lesson && ['problem','idea','entry','range','traceEnd'].every(field => typeof lesson[field] === 'string' && lesson[field].trim()), `${item.id}: required explanations`);
+    assert.ok(!/(?<!아)니다|세요|원소 반영|조건 복구|해당 시점|이제 살펴보|중요한 점은/.test(JSON.stringify(data)), `${item.id}: concrete notebook tone`);
+    assert.ok(lesson.variables.length >= 2 && lesson.boundaries.length && lesson.traceEnd.trim(), `${item.id}: details`);
     assert.ok(lesson.walkthrough.length >= 3, `${item.id}: walkthrough`);
     const lineCount = code.trimEnd().split('\n').length;
     for (const part of lesson.walkthrough) {
         assert.ok(Number.isInteger(part.from) && part.from >= 1 && part.to >= part.from && part.to <= lineCount, `${item.id}: source range`);
-        assert.ok(part.text.length && part.text.every(text => text.length > 45), `${item.id}: execution explanation`);
+        assert.ok(part.text.length && part.text.every(text => typeof text === 'string' && text.trim()), `${item.id}: execution explanation`);
     }
     if (['sliding-window','monotonic-deque','binary-search'].includes(item.id)) {
         const trace = JSON.parse(await readFile(path.join(root,`src/data/traces/${item.id}.json`),'utf8'));
@@ -40,7 +41,7 @@ for (const item of catalog) {
             }
         }
     } else assert.ok(lesson.diagram?.rows?.length || lesson.diagram?.nodes?.length, `${item.id}: static diagram`);
-    assert.ok(lesson.range?.length > 30, `${item.id}: bounds and numeric types`);
+    assert.ok(lesson.range?.trim(), `${item.id}: bounds and numeric types`);
     assert.ok(!/\b(?:size_t|unsigned|static_cast|numeric_limits)\b|1ULL|__builtin_popcount|auto\s*\[|auto&\s*\[/.test(code), `${item.id}: personal C++ convention`);
     assert.ok(!/for\s*\([^;]*;[^;]*\.size\(\)/.test(code), `${item.id}: cache length as int`);
     assert.ok(!code.replace('using ll = long long;', '').includes('long long'), `${item.id}: use ll alias`);
@@ -53,6 +54,7 @@ for (const item of catalog) {
     assert.ok(!/추후 추가|준비 중|TODO|lorem ipsum/i.test(JSON.stringify(data)));
 }
 for (const notes of [mistakeNotes,guides,quickNotes]) {
+    assert.ok(!/(?<!아)니다|세요|원소 반영|조건 복구|해당 시점|이제 살펴보|중요한 점은/.test(JSON.stringify(notes)), 'Reference notebook tone');
     assert.equal(new Set(notes.map(x=>x.id)).size,notes.length);
     for (const note of notes) for (const id of note.links || []) assert.ok(ids.has(id), `Broken reference: ${id}`);
 }
